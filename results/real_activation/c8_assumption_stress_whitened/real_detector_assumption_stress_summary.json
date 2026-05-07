@@ -1,0 +1,18 @@
+{
+  "activation_path": "results/real_activation/c5_pca_whiten_30k/gpt2_layer6_resid_pre_100000tok_pca_whiten.npy",
+  "amp": 0.7,
+  "axis_feature_independent_power": 0.05,
+  "axis_labeled_power": 1.0,
+  "axis_unrestricted_cov_power": 0.445,
+  "corr_feature_independent_power_geometry": 0.9051390489168919,
+  "corr_unrestricted_cov_power_geometry": 0.07171417844994166,
+  "lambda_eff": 0.15256146302392357,
+  "mean_feature_independent_power": 0.38802941176470584,
+  "mean_labeled_power": 1.0,
+  "mean_unrestricted_cov_power": 0.477735294117647,
+  "mode": "real_detector_assumption_stress",
+  "n": 8192,
+  "p": 0.05,
+  "rows": 85,
+  "trials": 400
+}

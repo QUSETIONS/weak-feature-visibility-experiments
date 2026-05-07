@@ -1,0 +1,28 @@
+{
+  "bank_csv": "results/real_activation/c13_preregistered_feature_bank/preregistered_feature_bank.csv",
+  "corr_geometry_abs_offdiag_z": -0.15632742116642115,
+  "corr_geometry_log10_evidence_proxy": -0.32723816587188015,
+  "event_csv": "results\\real_activation\\c18_natural_feature_geometry_audit\\natural_feature_geometry_by_event.csv",
+  "events": 47,
+  "families": [
+    "lexical",
+    "linguistic",
+    "ner",
+    "pos_tagger",
+    "semantic_cluster"
+  ],
+  "family_csv": "results\\real_activation\\c18_natural_feature_geometry_audit\\natural_feature_geometry_by_family.csv",
+  "geometry_summary": {
+    "max": 0.9964307830668986,
+    "mean": 0.9954583178858887,
+    "median": 0.9955891030840576,
+    "min": 0.9924988998100162,
+    "p10": 0.9947877991944551,
+    "p25": 0.9952813747804612,
+    "p75": 0.9959657951258123,
+    "p90": 0.9962489462923259
+  },
+  "mode": "natural_feature_geometry_audit",
+  "near_axis_geometry_lt_0p9": 0,
+  "near_axis_geometry_lt_0p99": 0
+}

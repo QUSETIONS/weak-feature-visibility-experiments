@@ -1,0 +1,15 @@
+{
+  "activation_path": "results/real_activation/c5_pca_whiten_30k/gpt2_layer6_resid_pre_100000tok_pca_whiten.npy",
+  "amp": 0.7,
+  "axis_labeled_power": 1.0,
+  "axis_unlabeled_power": 0.05,
+  "corr_labeled_power_geometry": NaN,
+  "corr_unlabeled_power_geometry": 0.9051390489168919,
+  "lambda_eff": 0.15256146302392357,
+  "max_unlabeled_power": 0.545,
+  "mode": "real_geometry_intervention",
+  "n": 8192,
+  "p": 0.05,
+  "rows": 85,
+  "trials": 400
+}

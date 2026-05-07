@@ -1,0 +1,18 @@
+{
+  "axis_mean_labeled_power": 0.9433673469387756,
+  "axis_mean_unlabeled_power": 0.05044217687074829,
+  "corr_labeled_power_log10_evidence": 0.6042221668314478,
+  "corr_unlabeled_power_geometry": -0.0017110260411478293,
+  "corr_unlabeled_power_lambda_eff": 0.7495068824507968,
+  "corr_unlabeled_power_log10_evidence": 0.8715845531007753,
+  "corr_unlabeled_power_n": 0.4391409978866701,
+  "inputs": [
+    "results\\real_activation\\c6_detector_evidence_whitened_p002\\injection_probe.csv",
+    "results\\real_activation\\c6_detector_evidence_whitened_p005\\injection_probe.csv",
+    "results\\real_activation\\c6_detector_evidence_whitened_p010\\injection_probe.csv"
+  ],
+  "max_unlabeled_power_nonaxis": 1.0,
+  "mode": "real_detector_collapse",
+  "nonaxis_rows": 588,
+  "rows": 735
+}

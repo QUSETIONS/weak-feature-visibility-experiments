@@ -1,0 +1,30 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Large generated assets and model/cache artifacts
+*.npy
+*.npz
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.tar
+*.tar.gz
+*.zip
+
+# Local/editor/runtime files
+.env
+.venv/
+venv/
+logs/
+refine-logs/
+.cache/
+.copilot/
+

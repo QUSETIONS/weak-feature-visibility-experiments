@@ -1,0 +1,49 @@
+{
+  "auc_lambda_for_recovered": 0.987012987012987,
+  "auc_lambda_for_transition_or_recovered": 0.948051948051948,
+  "auc_log10_lambda4_for_recovered": 0.987012987012987,
+  "claim_boundary": "Operational bridge only: TopK SAE recovery diagnostics rise with detector evidence, but this does not claim a full theory of SAE optimization or open-ended concept discovery.",
+  "input_by_config_csv": "results/real_activation/c4_topk_phase_diagram_whitened_positive/controlled_sae_sweep_by_config.csv",
+  "largest_null_lambda": 0.7905694150420949,
+  "metric_summary": {
+    "mean_best_atom_label_auc": {
+      "high_third_mean": 0.9762822076502443,
+      "low_third_mean": 0.5203565221564991,
+      "pearson_log10_lambda4": 0.8689586027803411,
+      "spearman_log10_lambda4": 0.87203302373581
+    },
+    "mean_max_decoder_cosine": {
+      "high_third_mean": 0.9774514095236858,
+      "low_third_mean": 0.1502220368840628,
+      "pearson_log10_lambda4": 0.8805215873648676,
+      "spearman_log10_lambda4": 0.9628482972136224
+    },
+    "mean_signal_gain": {
+      "high_third_mean": 0.9254066847076086,
+      "low_third_mean": 0.07630875155711242,
+      "pearson_log10_lambda4": 0.875821129646223,
+      "spearman_log10_lambda4": 0.9484004127966976
+    },
+    "mean_top_label_atom_abs_auc_excess": {
+      "high_third_mean": 0.45742624158582595,
+      "low_third_mean": 0.013343595327636133,
+      "pearson_log10_lambda4": 0.8754702570793028,
+      "spearman_log10_lambda4": 0.9236326109391124
+    },
+    "mean_top_label_atom_decoder_cosine": {
+      "high_third_mean": 0.9766344024489323,
+      "low_third_mean": 0.07283168317129214,
+      "pearson_log10_lambda4": 0.8908385690083054,
+      "spearman_log10_lambda4": 0.9669762641898865
+    }
+  },
+  "mode": "sae_facing_consequence_audit",
+  "rows": 18,
+  "smallest_recovered_lambda": 0.8944271909999159,
+  "smallest_transition_lambda": 0.6363961030678927,
+  "state_counts": {
+    "null": 7,
+    "recovered": 7,
+    "transition": 4
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "activation_path": "results\\real_activation\\c17_layer8_cache\\gpt2_layer8_resid_pre_10000tok.npy",
+  "bank_csv": "results\\real_activation\\c13_preregistered_feature_bank\\preregistered_feature_bank.csv",
+  "bank_match_fraction_among_evaluated": 0.04878048780487805,
+  "bank_matched_events": 2,
+  "corr_log10_evidence_vs_max_decoder_abs_cosine": 0.09057396808083529,
+  "corr_log10_evidence_vs_sae_abs_auc_excess": 0.3075850087592867,
+  "corr_log10_evidence_vs_sae_minus_random_abs_auc_excess": 0.33883141280382195,
+  "csv": "results\\real_activation\\c20_pretrained_sae_layer8_natural_event_audit_sparse\\pretrained_sae_natural_event_audit.csv",
+  "d_model": 768,
+  "d_sae": 24576,
+  "device": "cuda:0",
+  "events_evaluated": 41,
+  "events_generated": 48,
+  "events_skipped": 7,
+  "families_requested": [
+    "lexical",
+    "linguistic",
+    "pos",
+    "ner"
+  ],
+  "family_summary": {
+    "lexical": {
+      "events": 11,
+      "mean_random_abs_auc_excess": 0.24921638692511863,
+      "mean_sae_abs_auc_excess": 0.30024438394100456,
+      "mean_sae_minus_random_abs_auc_excess": 0.0510279970158859,
+      "sae_beats_random_fraction": 0.5454545454545454
+    },
+    "linguistic": {
+      "events": 11,
+      "mean_random_abs_auc_excess": 0.239487095765055,
+      "mean_sae_abs_auc_excess": 0.20491450978365544,
+      "mean_sae_minus_random_abs_auc_excess": -0.03457258598139949,
+      "sae_beats_random_fraction": 0.2727272727272727
+    },
+    "ner": {
+      "events": 6,
+      "mean_random_abs_auc_excess": 0.14855573281434412,
+      "mean_sae_abs_auc_excess": 0.13507586519805106,
+      "mean_sae_minus_random_abs_auc_excess": -0.01347986761629305,
+      "sae_beats_random_fraction": 0.16666666666666666
+    },
+    "pos_tagger": {
+      "events": 13,
+      "mean_random_abs_auc_excess": 0.17777347365230406,
+      "mean_sae_abs_auc_excess": 0.15240139889222387,
+      "mean_sae_minus_random_abs_auc_excess": -0.02537207476008024,
+      "sae_beats_random_fraction": 0.23076923076923078
+    }
+  },
+  "mean_random_abs_auc_excess": 0.2092226308282421,
+  "mean_sae_abs_auc_excess": 0.20362002945752378,
+  "mean_sae_minus_random_abs_auc_excess": -0.005602601370718313,
+  "mode": "pretrained_sae_natural_event_audit",
+  "random_baseline": "sparse_calibrated",
+  "random_features": 24576,
+  "sae_beats_random_fraction": 0.3170731707317073,
+  "sae_dir": "assets\\gpt2_sae_layer8\\blocks.8.hook_resid_pre",
+  "sae_train_live_feature_fraction": 0.9958089192708334,
+  "sae_train_mean_firing_rate": 0.008561686197916666,
+  "sae_train_median_firing_rate": 0.0044,
+  "seconds": 283.9120216369629,
+  "skipped": {
+    "linguistic:discourse_marker": {
+      "firing_rate": 0.0007,
+      "test_pos": 4,
+      "train_pos": 3
+    },
+    "linguistic:modal_aux": {
+      "firing_rate": 0.0038,
+      "test_pos": 18,
+      "train_pos": 20
+    },
+    "linguistic:negation": {
+      "firing_rate": 0.0035,
+      "test_pos": 20,
+      "train_pos": 15
+    },
+    "linguistic:title_word": {
+      "firing_rate": 0.0004,
+      "test_pos": 3,
+      "train_pos": 1
+    },
+    "ner:ner_facility": {
+      "firing_rate": 0.0018,
+      "test_pos": 10,
+      "train_pos": 8
+    },
+    "ner:ner_location": {
+      "firing_rate": 0.0002,
+      "test_pos": 2,
+      "train_pos": 0
+    },
+    "pos_tagger:pos_modal": {
+      "firing_rate": 0.0029,
+      "test_pos": 16,
+      "train_pos": 13
+    }
+  },
+  "tertile_summary": {
+    "high_evidence_mean_sae_abs_auc_excess": 0.23861671513708713,
+    "high_evidence_mean_sae_minus_random_abs_auc_excess": 0.03951970389760411,
+    "low_evidence_mean_sae_abs_auc_excess": 0.15836069904881153,
+    "low_evidence_mean_sae_minus_random_abs_auc_excess": -0.023573540912298234
+  },
+  "test_tokens": 5000,
+  "tokens": 10000,
+  "train_tokens": 5000
+}

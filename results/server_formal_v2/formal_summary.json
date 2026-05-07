@@ -1,0 +1,23 @@
+{
+  "alpha": 0.05,
+  "axis_power_mean": 0.07446428571428572,
+  "axis_power_sd": 0.013671987696011636,
+  "bootstrap": 1000,
+  "dark_floor_corr_all": 0.9980543984132115,
+  "dark_floor_mae_all": 0.006396979949752029,
+  "evidence_power_corr": 0.9035103046757833,
+  "labeled_slope": -1.8820326115338364,
+  "labeled_slope_ci_high": -1.830805446571388,
+  "labeled_slope_ci_low": -1.9308413198783303,
+  "m": 8,
+  "platform": "Linux CPU run",
+  "seed": 20260502,
+  "seeds": 8,
+  "spread_power_mean_at_lambda_0p50": 1.0,
+  "target_power": 0.8,
+  "trials": 700,
+  "unlabeled_slope": -3.9660195942687007,
+  "unlabeled_slope_ci_high": -3.927039696083977,
+  "unlabeled_slope_ci_low": -4.015987994333857,
+  "wall_time_seconds": 545.2772350311279
+}

@@ -1,0 +1,12 @@
+numpy
+scipy
+pandas
+matplotlib
+torch
+transformers
+datasets
+nltk
+safetensors
+huggingface_hub
+scikit-learn
+

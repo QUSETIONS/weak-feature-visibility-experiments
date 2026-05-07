@@ -1,0 +1,59 @@
+{
+  "layers": [
+    4,
+    6,
+    8,
+    10
+  ],
+  "min_corr_log_evidence_abs_offdiag_z": 0.7804684912423631,
+  "min_frac_label_z_gt_5": 1.0,
+  "min_frac_offdiag_z_gt_5": 0.5384615384615384,
+  "min_median_abs_offdiag_cov_z": 5.000758746113446,
+  "mode": "pos_tagger_layer_robustness",
+  "runs": [
+    {
+      "corr_log_evidence_abs_offdiag_z": 0.8095644193272213,
+      "events_evaluated": 13,
+      "frac_label_z_gt_5": 1.0,
+      "frac_offdiag_z_gt_5": 0.5384615384615384,
+      "layer": 4,
+      "median_abs_full_cov_z": 5.002104749295296,
+      "median_abs_label_z": 8.952511814677512,
+      "median_abs_offdiag_cov_z": 5.000758746113446,
+      "tokens": 10000
+    },
+    {
+      "corr_log_evidence_abs_offdiag_z": 0.8005356648419695,
+      "events_evaluated": 13,
+      "frac_label_z_gt_5": 1.0,
+      "frac_offdiag_z_gt_5": 0.5384615384615384,
+      "layer": 6,
+      "median_abs_full_cov_z": 6.166922506377433,
+      "median_abs_label_z": 8.677928494870189,
+      "median_abs_offdiag_cov_z": 6.170194219578676,
+      "tokens": 10000
+    },
+    {
+      "corr_log_evidence_abs_offdiag_z": 0.8009308830455806,
+      "events_evaluated": 13,
+      "frac_label_z_gt_5": 1.0,
+      "frac_offdiag_z_gt_5": 0.6923076923076923,
+      "layer": 8,
+      "median_abs_full_cov_z": 7.2289861331811,
+      "median_abs_label_z": 8.377982311150927,
+      "median_abs_offdiag_cov_z": 7.233475981229682,
+      "tokens": 10000
+    },
+    {
+      "corr_log_evidence_abs_offdiag_z": 0.7804684912423631,
+      "events_evaluated": 13,
+      "frac_label_z_gt_5": 1.0,
+      "frac_offdiag_z_gt_5": 0.5384615384615384,
+      "layer": 10,
+      "median_abs_full_cov_z": 6.567093282665956,
+      "median_abs_label_z": 8.138414625322039,
+      "median_abs_offdiag_cov_z": 6.5621514970726755,
+      "tokens": 10000
+    }
+  ]
+}
