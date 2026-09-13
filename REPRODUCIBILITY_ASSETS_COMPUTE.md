@@ -1,6 +1,6 @@
 # Reproducibility, Assets, and Compute
 
-This note records the concrete information needed for the NeurIPS checklist and anonymous supplemental package.
+This note records the concrete information needed for the ICLR 2027 checklist and anonymous supplemental package.
 
 ## Code and data access
 
@@ -8,7 +8,8 @@ The anonymous review package contains:
 
 - `experiments/`: Python scripts for the formal synthetic experiments, GPT-2 activation preprocessing, controlled injection tests, natural-event probes, SAE-facing audits, and summary generation.
 - `results/`: CSV/JSON/PDF/PNG artifacts used to produce the paper tables, figures, and reported numbers.
-- `assets/gpt2_sae_layer6/README.md`: license metadata for the pretrained GPT-2 SAE artifact used by the C17/C19 audits.
+- `assets_metadata/`: license/config metadata for the pretrained GPT-2 SAE artifacts used by the C17/C19/C20/C21 audits.
+- `paper/`: anonymous LaTeX source, editable figure source/data, rendered figures, and the latest anonymous PDF.
 
 Large model files, SAE weights, activation caches, `.npy` caches, `.pt` checkpoints, and `__pycache__` files are intentionally excluded from the portable archive. The scripts document how the excluded activation caches were produced from public artifacts.
 
@@ -60,3 +61,16 @@ The real-activation bridge uses cached GPT-2-small layer-6 activations:
 - C19 bridge-assumption audit: `12000` tokens, 50/50 train/test split, CPU for the recorded C17-atom audit
 
 These are audit-scale experiments, not large foundation-model training runs.
+
+The Pythia-160M scale extension is recorded in `experiments/results_lm_spectral_warm_start_scale_extension/`; its separately frozen
+6k-step same-data budget follow-up is in `experiments/results_lm_spectral_warm_start_scale_extension_budget/`. The 6k follow-up
+contains 48 complete pairs and reports a null-compatible cosine difference and held-out MSE difference, so the paper frames
+the warm-start effect as model- and budget-sensitive rather than universal.
+
+## Anonymous manuscript build
+
+```bash
+make -C paper TECTONIC=tectonic
+```
+
+This produces the anonymous `paper/main.pdf`. The author-version source and PDF are deliberately not part of the public repository.

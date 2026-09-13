@@ -1,0 +1,66 @@
+{
+  "experiment_id": "spectral-anchor-sae-v5-dose-response",
+  "status": "frozen-before-execution",
+  "purpose": "Measure dose-response and matched-compute baselines for spectral-anchor constraints at the independent anchor-group level.",
+  "feature": {
+    "m": 8,
+    "signal_strength": 0.55,
+    "distribution": "rank-one Gaussian signal plus isotropic Gaussian noise"
+  },
+  "geometry": ["axis", "dense"],
+  "objectives": [
+    {"id": "mse", "code_penalty": 0.0, "code_penalty_type": "none"}
+  ],
+  "capacities": [
+    {"id": "d32-k4", "total_dict_size": 32, "residual_dict_size": 30, "k": 4}
+  ],
+  "configs": [
+    {"id": "frozen-exact", "mode": "frozen", "rho_radians": 0.0, "eta": 0.0, "anchor_soft_penalty": 0.0, "residual_soft_penalty": 0.0},
+    {"id": "frozen-leak-010", "mode": "frozen", "rho_radians": 0.0, "eta": 0.10, "anchor_soft_penalty": 0.0, "residual_soft_penalty": 0.0},
+    {"id": "hard-rho-005-eta-010", "mode": "hard", "rho_radians": 0.05, "eta": 0.10, "anchor_soft_penalty": 0.0, "residual_soft_penalty": 0.0},
+    {"id": "hard-rho-010-eta-010", "mode": "hard", "rho_radians": 0.10, "eta": 0.10, "anchor_soft_penalty": 0.0, "residual_soft_penalty": 0.0},
+    {"id": "hard-rho-020-eta-000", "mode": "hard", "rho_radians": 0.20, "eta": 0.0, "anchor_soft_penalty": 0.0, "residual_soft_penalty": 0.0},
+    {"id": "hard-rho-020-eta-010", "mode": "hard", "rho_radians": 0.20, "eta": 0.10, "anchor_soft_penalty": 0.0, "residual_soft_penalty": 0.0},
+    {"id": "hard-rho-040-eta-010", "mode": "hard", "rho_radians": 0.40, "eta": 0.10, "anchor_soft_penalty": 0.0, "residual_soft_penalty": 0.0},
+    {"id": "soft-rho-020-eta-010", "mode": "soft", "rho_radians": 0.20, "eta": 0.10, "anchor_soft_penalty": 5.0, "residual_soft_penalty": 5.0},
+    {"id": "unbounded", "mode": "unbounded", "rho_radians": null, "eta": null, "anchor_soft_penalty": 0.0, "residual_soft_penalty": 0.0}
+  ],
+  "seeds": {
+    "base": 20261201,
+    "count": 4,
+    "training_rng_offset": 1310000,
+    "torch_seed_offset": 1410000,
+    "validation_rng_offset": 1510000
+  },
+  "training": {
+    "N_train": 20000,
+    "N_validation": 100000,
+    "steps": 4000,
+    "batch": 512,
+    "lr": 0.001,
+    "anchor_active_slots": 1,
+    "residual_active_slots": "k_minus_1",
+    "residual_decoder_columns_unit_norm": true,
+    "candidate_selection": "fixed_signed_training_spectral_anchor",
+    "validation_is_never_used_for_selection": true
+  },
+  "anchor": {
+    "estimator": "leading_eigenvector_of_training_second_moment",
+    "covariance_norm_upper_bound": 1.55,
+    "davis_kahan_eigengap": 0.55,
+    "delta": 0.05,
+    "selection_split": "training_only",
+    "signed_pair": true,
+    "target_oracle_forbidden": true,
+    "family_count": 8,
+    "recovery_threshold": 0.80,
+    "evidence_scope": "anchor_group_ablation_only"
+  },
+  "validation": {
+    "selection_forbidden": true,
+    "audit": "held-out target cosine, drift, leakage, projection hits, and reconstruction loss only"
+  },
+  "expected_groups": 8,
+  "expected_rows": 72,
+  "evidence_status": "eligible_only_as_a_pre_registered_constraint_sensitivity_ablation"
+}

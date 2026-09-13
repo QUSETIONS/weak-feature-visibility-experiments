@@ -1,0 +1,90 @@
+{
+  "experiment_id": "spectral-anchor-sae-v7-readout-audit",
+  "status": "frozen-before-execution",
+  "purpose": "Audit target-free readout choices on the same unconstrained spectral warm-start SAE models.",
+  "source_protocol": "spectral-anchor-sae-v6-matched-warm-start",
+  "feature": {
+    "m": 8,
+    "signal_strength": 0.55,
+    "distribution": "rank-one Gaussian signal plus isotropic Gaussian noise"
+  },
+  "geometry": ["axis", "dense"],
+  "objectives": [
+    {"id": "mse", "code_penalty": 0.0, "code_penalty_type": "none"},
+    {"id": "mse_l1", "code_penalty": 0.001, "code_penalty_type": "l1"},
+    {"id": "mse_l2", "code_penalty": 0.001, "code_penalty_type": "l2"}
+  ],
+  "capacities": [
+    {"id": "d16-k2", "dict_size": 16, "k": 2},
+    {"id": "d32-k4", "dict_size": 32, "k": 4}
+  ],
+  "warm_start": {
+    "variant_id": "spectral-warm-start",
+    "initialization": "training_spectral_signed_pair",
+    "anchor_pair_slots": [0, 1],
+    "post_initialization_constraints": "none"
+  },
+  "readouts": [
+    {
+      "id": "usage-atom",
+      "kind": "atom",
+      "selection": "training_split_activation_usage_only",
+      "description": "Original stress-protocol activation-usage candidate"
+    },
+    {
+      "id": "spectral-linked-atom",
+      "kind": "atom",
+      "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+      "description": "Target-free atom selected by training spectral linkage"
+    },
+    {
+      "id": "signed-pair-span",
+      "kind": "subspace",
+      "selection": "fixed_training_spectral_warm_start_pair_slots",
+      "slots": [0, 1],
+      "description": "Rank-at-most-two span of the initialized signed pair"
+    }
+  ],
+  "seeds": {
+    "base": 20261101,
+    "count": 4,
+    "training_rng_offset": 710000,
+    "torch_seed_offset": 810000,
+    "validation_rng_offset": 910000
+  },
+  "training": {
+    "N_train": 20000,
+    "N_validation": 100000,
+    "steps": 4000,
+    "batch": 512,
+    "lr": 0.001,
+    "decoder_columns_unit_norm": true,
+    "candidate_selection": "training_split_activation_usage_only",
+    "candidate_selection_tie_break": "lowest_atom_index",
+    "validation_is_never_used_for_selection": true,
+    "warm_start_uses_training_split_only": true,
+    "post_initialization_constraints": "none"
+  },
+  "certificate": {
+    "delta": 0.05,
+    "family_count": 144,
+    "noise_variance": 1.0,
+    "independent_validation": true,
+    "atom_rank": 1,
+    "span_rank_max": 2,
+    "span_relative_singular_value_tolerance": 0.05
+  },
+  "evaluation": {
+    "cosine_threshold": 0.80,
+    "target_cosine_is_validation_only": true,
+    "target_is_never_passed_to_training": true
+  },
+  "comparison": {
+    "expected_pairs": 48,
+    "one_model_per_pair": true,
+    "readouts_share_final_model": true,
+    "readout_selection_is_training_only": true
+  },
+  "expected_rows": 48,
+  "evidence_status": "eligible_only_as_a_target_free_readout_ablation"
+}

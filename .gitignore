@@ -28,3 +28,22 @@ refine-logs/
 .cache/
 .copilot/
 
+# Project-local release hygiene
+.DS_Store
+*.bak
+*.bak-*
+*.log
+*.pid
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+tmp/
+bin/
+.claude_scratch/
+experiments/weights/
+paper/main_author.*
+paper/*author*.pdf
+paper/*before*.pdf

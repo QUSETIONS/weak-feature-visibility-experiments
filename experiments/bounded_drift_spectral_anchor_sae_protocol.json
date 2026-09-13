@@ -1,0 +1,60 @@
+{
+  "experiment_id": "spectral-anchor-sae-v4-bounded-drift",
+  "status": "frozen-before-execution",
+  "purpose": "Test target-free spectral-anchor recovery when the anchor is trainable inside a bounded trust region and residual decoders have bounded anchor leakage.",
+  "feature": {
+    "m": 8,
+    "signal_strength": 0.55,
+    "distribution": "rank-one Gaussian signal plus isotropic Gaussian noise"
+  },
+  "geometry": ["axis", "dense"],
+  "objectives": [
+    {"id": "mse", "code_penalty": 0.0, "code_penalty_type": "none"},
+    {"id": "mse_l1", "code_penalty": 0.001, "code_penalty_type": "l1"},
+    {"id": "mse_l2", "code_penalty": 0.001, "code_penalty_type": "l2"}
+  ],
+  "capacities": [
+    {"id": "d16-k2", "total_dict_size": 16, "residual_dict_size": 14, "k": 2},
+    {"id": "d32-k4", "total_dict_size": 32, "residual_dict_size": 30, "k": 4}
+  ],
+  "seeds": {
+    "base": 20261121,
+    "count": 4,
+    "training_rng_offset": 1010000,
+    "torch_seed_offset": 1110000,
+    "validation_rng_offset": 1210000
+  },
+  "training": {
+    "N_train": 20000,
+    "N_validation": 100000,
+    "steps": 4000,
+    "batch": 512,
+    "lr": 0.001,
+    "anchor_trainable": true,
+    "anchor_trust_region_radians": 0.20,
+    "residual_decoder_columns_unit_norm": true,
+    "residual_anchor_leakage_abs_max": 0.10,
+    "anchor_active_slots": 1,
+    "residual_active_slots": "k_minus_1",
+    "candidate_selection": "fixed_signed_training_spectral_anchor",
+    "validation_is_never_used_for_selection": true
+  },
+  "anchor": {
+    "estimator": "leading_eigenvector_of_training_second_moment",
+    "selection_split": "training_only",
+    "signed_pair": true,
+    "target_oracle_forbidden": true,
+    "residual_objectives_may_update_anchor": true,
+    "davis_kahan_eigengap": 0.55,
+    "covariance_norm_upper_bound": 1.55,
+    "delta": 0.05,
+    "family_count": 8,
+    "recovery_threshold": 0.80
+  },
+  "validation": {
+    "selection_forbidden": true,
+    "audit": "held-out target cosine, anchor drift, residual leakage, and reconstruction loss only"
+  },
+  "expected_rows": 48,
+  "evidence_status": "eligible_only_if_complete_and_all_bounded_drift_gates_pass"
+}

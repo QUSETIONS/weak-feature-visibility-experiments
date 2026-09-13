@@ -1,0 +1,384 @@
+{
+  "elapsed_sec": 71.38581395149231,
+  "n_train_tokens": 512000,
+  "n_test_tokens": 192000,
+  "encoder": "relu((h-b_dec)@W_enc + b_enc)",
+  "apply_b_dec_to_input": true,
+  "protocol": {
+    "N": 1024,
+    "N_big": 8192,
+    "n_null": 400,
+    "n_rand": 400,
+    "n_trials": 200,
+    "alpha": 0.05,
+    "layer": 6,
+    "no_injection": true
+  },
+  "rand_cov_768_q": 353.7055855554989,
+  "rand_ind_768_q": 80.91662766879965,
+  "source": "/mnt/liuzelin/weak_feature_visibility/experiments/weights/jbloom_gpt2_l6/selected_atoms.npz",
+  "repo": "jbloom/GPT2-Small-SAEs-Reformatted",
+  "hook": "blocks.6.hook_resid_pre",
+  "atoms": [
+    {
+      "atom": 23123,
+      "C_resid": 0.13998487646156832,
+      "C_pca32": 0.1222912431722597,
+      "argmax_dim": 447,
+      "max_abs": 0.9615334029688811,
+      "n_pos": 19595,
+      "fire_rate": 0.10205729166666666,
+      "label_cosine": 0.9978584620013617,
+      "label_stat": 55488.330760368015,
+      "label_perm_p": 0.0,
+      "label_beats_perm": true,
+      "cov": 71328.35595630501,
+      "ind": 9423.28945175175,
+      "cov_rand_p": 0.0,
+      "ind_rand_p": 0.0,
+      "cov_beats_rand": true,
+      "ind_beats_rand": true,
+      "pca32_cov": 1.0010249905215045,
+      "pca32_ind": 0.0009204618432391968,
+      "pca32_cov_beats_rand": false,
+      "pca32_ind_beats_rand": false,
+      "pca32_cov_rand_p": 0.85,
+      "pca32_ind_rand_p": 0.4775,
+      "power_N1024": {
+        "label": 1.0,
+        "cov": 1.0,
+        "ind": 1.0
+      },
+      "power_N8192": {
+        "label": 1.0,
+        "cov": 1.0,
+        "ind": 1.0
+      },
+      "description": "residual coord 447 (10 duplicate atoms)",
+      "autointerp": [
+        "phrases related to legal documents and rulings",
+        "various types of punctuation marks or symbols"
+      ]
+    },
+    {
+      "atom": 316,
+      "C_resid": 0.1405527476798839,
+      "C_pca32": 0.12572793579594166,
+      "argmax_dim": 447,
+      "max_abs": 0.961360784715088,
+      "n_pos": 9467,
+      "fire_rate": 0.04930729166666667,
+      "label_cosine": 0.9986498551101459,
+      "label_stat": 229407.29709282587,
+      "label_perm_p": 0.0,
+      "label_beats_perm": true,
+      "cov": 71326.99894631704,
+      "ind": 9442.452609205848,
+      "cov_rand_p": 0.0,
+      "ind_rand_p": 0.0,
+      "cov_beats_rand": true,
+      "ind_beats_rand": true,
+      "pca32_cov": 1.0010048356480667,
+      "pca32_ind": 0.0008694559142483387,
+      "pca32_cov_beats_rand": false,
+      "pca32_ind_beats_rand": false,
+      "pca32_cov_rand_p": 0.85,
+      "pca32_ind_rand_p": 0.4775,
+      "power_N1024": {
+        "label": 0.995,
+        "cov": 1.0,
+        "ind": 1.0
+      },
+      "power_N8192": {
+        "label": 1.0,
+        "cov": 1.0,
+        "ind": 1.0
+      },
+      "description": "residual coord 447 (duplicate of 23123)",
+      "autointerp": [
+        "mentions of percentages or numerical values",
+        "empty or placeholder content"
+      ]
+    },
+    {
+      "atom": 14698,
+      "C_resid": 0.666104491944538,
+      "C_pca32": 0.415123304786324,
+      "argmax_dim": 480,
+      "max_abs": 0.7588359516296834,
+      "n_pos": 3206,
+      "fire_rate": 0.016697916666666666,
+      "label_cosine": 0.07744302416536346,
+      "label_stat": 11676.16084669569,
+      "label_perm_p": 0.0,
+      "label_beats_perm": true,
+      "cov": 561.5961181880442,
+      "ind": -11.71532062762419,
+      "cov_rand_p": 0.0125,
+      "ind_rand_p": 0.745,
+      "cov_beats_rand": true,
+      "ind_beats_rand": false,
+      "pca32_cov": 1.006359273244378,
+      "pca32_ind": -9.798173002628345e-05,
+      "pca32_cov_beats_rand": false,
+      "pca32_ind_beats_rand": false,
+      "pca32_cov_rand_p": 0.6625,
+      "pca32_ind_rand_p": 0.515,
+      "power_N1024": {
+        "label": 1.0,
+        "cov": 0.9,
+        "ind": 0.0
+      },
+      "power_N8192": {
+        "label": 1.0,
+        "cov": 1.0,
+        "ind": 0.0
+      },
+      "description": "subscription / newsletter phrases",
+      "autointerp": [
+        "subscription-related phrases typically seen in newsletters and emails",
+        "phrases related to subscription and newsletter engagement"
+      ]
+    },
+    {
+      "atom": 1188,
+      "C_resid": 0.897038909475191,
+      "C_pca32": 0.8088765897172117,
+      "argmax_dim": 480,
+      "max_abs": 0.5631125684818306,
+      "n_pos": 4994,
+      "fire_rate": 0.026010416666666668,
+      "label_cosine": 0.02955326422641799,
+      "label_stat": 703.5981239627296,
+      "label_perm_p": 0.0,
+      "label_beats_perm": true,
+      "cov": 69.64082607220476,
+      "ind": -22.173881118928588,
+      "cov_rand_p": 0.425,
+      "ind_rand_p": 0.81,
+      "cov_beats_rand": false,
+      "ind_beats_rand": false,
+      "pca32_cov": 1.0106302338099573,
+      "pca32_ind": 0.0033574458471646194,
+      "pca32_cov_beats_rand": false,
+      "pca32_ind_beats_rand": false,
+      "pca32_cov_rand_p": 0.5225,
+      "pca32_ind_rand_p": 0.3725,
+      "power_N1024": {
+        "label": 1.0,
+        "cov": 0.0,
+        "ind": 0.0
+      },
+      "power_N8192": {
+        "label": 1.0,
+        "cov": 0.0,
+        "ind": 0.0
+      },
+      "description": "list leftovers (etc / respectively)",
+      "autointerp": [
+        "action verbs related to specific tasks and activities",
+        "the presence of an empty context or void"
+      ]
+    },
+    {
+      "atom": 1,
+      "C_resid": 0.9957593065340467,
+      "C_pca32": 0.8622276695262823,
+      "argmax_dim": 173,
+      "max_abs": 0.12352608755621035,
+      "n_pos": 1618,
+      "fire_rate": 0.008427083333333333,
+      "label_cosine": 0.06469604640083144,
+      "label_stat": 31876.700274542545,
+      "label_perm_p": 0.0,
+      "label_beats_perm": true,
+      "cov": 314.1011811279108,
+      "ind": -22.261433825123625,
+      "cov_rand_p": 0.065,
+      "ind_rand_p": 0.815,
+      "cov_beats_rand": false,
+      "ind_beats_rand": false,
+      "pca32_cov": 1.0025904266929746,
+      "pca32_ind": -0.006514808734510012,
+      "pca32_cov_beats_rand": false,
+      "pca32_ind_beats_rand": false,
+      "pca32_cov_rand_p": 0.8025,
+      "pca32_ind_rand_p": 0.72,
+      "power_N1024": {
+        "label": 1.0,
+        "cov": 0.43,
+        "ind": 0.0
+      },
+      "power_N8192": {
+        "label": 1.0,
+        "cov": 0.59,
+        "ind": 0.0
+      },
+      "description": "grants / funding",
+      "autointerp": [
+        "mentions of financial funding through grants",
+        "references to grants and funding"
+      ]
+    },
+    {
+      "atom": 1834,
+      "C_resid": 0.9961037278709179,
+      "C_pca32": 0.9039768813370773,
+      "argmax_dim": 543,
+      "max_abs": 0.10849025169284353,
+      "n_pos": 1522,
+      "fire_rate": 0.007927083333333333,
+      "label_cosine": 0.0777715987186779,
+      "label_stat": 52051.81543674132,
+      "label_perm_p": 0.0,
+      "label_beats_perm": true,
+      "cov": 439.8769363492314,
+      "ind": 16.11942791285895,
+      "cov_rand_p": 0.03,
+      "ind_rand_p": 0.2875,
+      "cov_beats_rand": true,
+      "ind_beats_rand": false,
+      "pca32_cov": 1.0232657524120752,
+      "pca32_ind": 0.014089627776526554,
+      "pca32_cov_beats_rand": false,
+      "pca32_ind_beats_rand": false,
+      "pca32_cov_rand_p": 0.16,
+      "pca32_ind_rand_p": 0.1,
+      "power_N1024": {
+        "label": 0.995,
+        "cov": 0.71,
+        "ind": 0.0
+      },
+      "power_N8192": {
+        "label": 1.0,
+        "cov": 0.995,
+        "ind": 0.0
+      },
+      "description": "VAT / tax terms",
+      "autointerp": [
+        "terms related to taxation and levies, especially focusing on Value Added Tax (VAT)",
+        "terms related to taxes and tax-related concepts"
+      ]
+    },
+    {
+      "atom": 12501,
+      "C_resid": 0.995296283591209,
+      "C_pca32": 0.8860475268656621,
+      "argmax_dim": 496,
+      "max_abs": 0.15036916334377076,
+      "n_pos": 1619,
+      "fire_rate": 0.008432291666666666,
+      "label_cosine": 0.02175010661279203,
+      "label_stat": 3598.5278939064665,
+      "label_perm_p": 0.0,
+      "label_beats_perm": true,
+      "cov": 39.33866019359609,
+      "ind": -5.733937929701913,
+      "cov_rand_p": 0.555,
+      "ind_rand_p": 0.67,
+      "cov_beats_rand": false,
+      "ind_beats_rand": false,
+      "pca32_cov": 1.0227960101463631,
+      "pca32_ind": 0.004035777570988401,
+      "pca32_cov_beats_rand": false,
+      "pca32_ind_beats_rand": false,
+      "pca32_cov_rand_p": 0.175,
+      "pca32_ind_rand_p": 0.3475,
+      "power_N1024": {
+        "label": 1.0,
+        "cov": 0.0,
+        "ind": 0.0
+      },
+      "power_N8192": {
+        "label": 1.0,
+        "cov": 0.0,
+        "ind": 0.0
+      },
+      "description": "Steven (Spielberg / Gerrard)",
+      "autointerp": [
+        "people named Steven, especially Steven Spielberg",
+        "references to individuals named Steven"
+      ]
+    },
+    {
+      "atom": 0,
+      "C_resid": 0.9959807435372361,
+      "C_pca32": 0.9016242816078976,
+      "argmax_dim": 746,
+      "max_abs": 0.11550071835900823,
+      "n_pos": 1583,
+      "fire_rate": 0.008244791666666666,
+      "label_cosine": 0.08733313426571084,
+      "label_stat": 60679.04051432627,
+      "label_perm_p": 0.0,
+      "label_beats_perm": true,
+      "cov": 563.9978056563848,
+      "ind": -2.002759411717494,
+      "cov_rand_p": 0.0125,
+      "ind_rand_p": 0.605,
+      "cov_beats_rand": true,
+      "ind_beats_rand": false,
+      "pca32_cov": 0.9951281146455265,
+      "pca32_ind": -0.011003932889258265,
+      "pca32_cov_beats_rand": false,
+      "pca32_ind_beats_rand": false,
+      "pca32_cov_rand_p": 0.9725,
+      "pca32_ind_rand_p": 0.8775,
+      "power_N1024": {
+        "label": 1.0,
+        "cov": 0.92,
+        "ind": 0.0
+      },
+      "power_N8192": {
+        "label": 1.0,
+        "cov": 1.0,
+        "ind": 0.0
+      },
+      "description": "notice / realization",
+      "autointerp": [
+        "phrases indicating observation or realization",
+        "forms of the word \"notice\" or \"noticed\""
+      ]
+    },
+    {
+      "atom": 399,
+      "C_resid": 0.9955684583967883,
+      "C_pca32": 0.8461757447150633,
+      "argmax_dim": 608,
+      "max_abs": 0.13952427824251823,
+      "n_pos": 1617,
+      "fire_rate": 0.008421875,
+      "label_cosine": 0.052357856275444065,
+      "label_stat": 20899.495889287176,
+      "label_perm_p": 0.0,
+      "label_beats_perm": true,
+      "cov": 207.51107046827883,
+      "ind": 11.82940282574619,
+      "cov_rand_p": 0.13,
+      "ind_rand_p": 0.3375,
+      "cov_beats_rand": false,
+      "ind_beats_rand": false,
+      "pca32_cov": 0.9890407655958995,
+      "pca32_ind": -0.015742314709015836,
+      "pca32_cov_beats_rand": false,
+      "pca32_ind_beats_rand": false,
+      "pca32_cov_rand_p": 0.99,
+      "pca32_ind_rand_p": 0.9675,
+      "power_N1024": {
+        "label": 1.0,
+        "cov": 0.04,
+        "ind": 0.0
+      },
+      "power_N8192": {
+        "label": 1.0,
+        "cov": 0.0,
+        "ind": 0.0
+      },
+      "description": "how-to / achieve verbs",
+      "autointerp": [
+        "phrases indicating a preferred course of action or recommendation",
+        "phrases that express methods or ways to achieve something"
+      ]
+    }
+  ]
+}

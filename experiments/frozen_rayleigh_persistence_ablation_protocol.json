@@ -1,0 +1,108 @@
+{
+  "experiment_id": "spectral-anchor-sae-v5-frozen-rayleigh-persistence-ablation",
+  "status": "frozen-before-execution",
+  "purpose": "Paired, target-free ablation of hard angular persistence, soft frozen-Rayleigh persistence, and unrestricted anchor motion inside the same signed training-spectral-anchor SAE architecture.",
+  "parent_protocol": {
+    "path": "bounded_drift_spectral_anchor_sae_protocol.json",
+    "role": "historical_reference_only_not_mutated"
+  },
+  "feature": {
+    "m": 8,
+    "signal_strength": 0.55,
+    "distribution": "rank-one Gaussian signal plus isotropic Gaussian noise"
+  },
+  "geometry": ["axis", "dense"],
+  "objectives": [
+    {"id": "mse", "code_penalty": 0.0, "code_penalty_type": "none"},
+    {"id": "mse_l1", "code_penalty": 0.001, "code_penalty_type": "l1"},
+    {"id": "mse_l2", "code_penalty": 0.001, "code_penalty_type": "l2"}
+  ],
+  "capacities": [
+    {"id": "d16-k2", "total_dict_size": 16, "residual_dict_size": 14, "k": 2},
+    {"id": "d32-k4", "total_dict_size": 32, "residual_dict_size": 30, "k": 4}
+  ],
+  "modes": [
+    {
+      "id": "hard_cap",
+      "anchor_update_rule": "project_to_reference_spherical_cap_after_optimizer_step",
+      "anchor_trust_region_radians": 0.20,
+      "rayleigh_penalty_weight": 0.0,
+      "soft_endpoint_gap_ratio_max": null
+    },
+    {
+      "id": "soft_rayleigh",
+      "anchor_update_rule": "unprojected_optimizer_step_with_frozen_rayleigh_penalty",
+      "anchor_trust_region_radians": null,
+      "rayleigh_penalty_weight": 1.0,
+      "soft_endpoint_gap_ratio_max": 0.039469502998557456
+    },
+    {
+      "id": "unrestricted_anchor",
+      "anchor_update_rule": "unprojected_optimizer_step_without_anchor_persistence_penalty",
+      "anchor_trust_region_radians": null,
+      "rayleigh_penalty_weight": 0.0,
+      "soft_endpoint_gap_ratio_max": null
+    }
+  ],
+  "seeds": {
+    "base": 20261201,
+    "count": 32,
+    "data_rng_offset": 1310000,
+    "validation_rng_offset": 1410000,
+    "torch_rng_offset": 1510000,
+    "seed_formula_version": "v1-paired-mode-arithmetic"
+  },
+  "training": {
+    "N_train": 20000,
+    "N_validation": 100000,
+    "steps": 4000,
+    "batch": 512,
+    "lr": 0.001,
+    "anchor_trainable": true,
+    "anchor_active_slots": 1,
+    "residual_active_slots": "k_minus_1",
+    "signed_pair": true,
+    "residual_decoder_columns_unit_norm": true,
+    "residual_anchor_leakage_abs_max": 0.10,
+    "candidate_selection": "fixed_signed_training_spectral_anchor",
+    "validation_is_never_used_for_selection": true,
+    "paired_mode_initialization": true,
+    "paired_mode_minibatches": true,
+    "deterministic_algorithms_required": true
+  },
+  "anchor": {
+    "estimator": "leading_eigenvector_of_training_second_moment",
+    "selection_split": "training_only",
+    "target_oracle_forbidden": true,
+    "frozen_training_second_moment_required": true,
+    "davis_kahan_eigengap": 0.55,
+    "covariance_norm_upper_bound": 1.55,
+    "delta": 0.05,
+    "family_count": 64,
+    "recovery_threshold": 0.80
+  },
+  "validation": {
+    "selection_forbidden": true,
+    "target_usage": "held_out_audit_only",
+    "audit": [
+      "target_cosine",
+      "reference_cosine",
+      "anchor_drift_radians",
+      "frozen_rayleigh_value",
+      "frozen_rayleigh_gap",
+      "frozen_rayleigh_gap_ratio",
+      "residual_anchor_dot_max",
+      "validation_reconstruction_loss"
+    ]
+  },
+  "gates": {
+    "numeric_tolerance": 0.00001,
+    "hard_cap_requires_certified_lower_bound": true,
+    "soft_rayleigh_requires_endpoint_gap_ratio": true,
+    "unrestricted_anchor_has_no_persistence_gate": true,
+    "all_modes_must_complete": true
+  },
+  "expected_rows": 1152,
+  "evidence_status": "eligible_only_if_complete_paired_and_all_declared_mode_specific_integrity_gates_pass",
+  "reporting_boundary": "This ablation compares persistence mechanisms in a signed training-spectral-anchor architecture. The unrestricted_anchor arm removes only anchor persistence; it is not an unconstrained-SAE result or theorem."
+}

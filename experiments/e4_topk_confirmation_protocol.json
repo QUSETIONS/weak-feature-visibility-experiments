@@ -1,0 +1,65 @@
+{
+  "experiment_id": "E4-topk-heldout-confirmation",
+  "status": "frozen-before-execution",
+  "parent_experiment": "E4-v2",
+  "question": "Does the fixed-basis independence split transfer to a geometry-specific recovery penalty across independently seeded TopK capacity and sparsity settings?",
+  "geometry": [
+    "axis",
+    "dense"
+  ],
+  "feature": {
+    "m": 8,
+    "p": 0.05,
+    "lambda_eff": 0.55
+  },
+  "detector": {
+    "N": 4096,
+    "trials": 400,
+    "null_draws": 800,
+    "alpha": 0.05,
+    "label_cov_min_power": 0.8,
+    "axis_ind_max_power": 0.15,
+    "dense_ind_min_power": 0.8
+  },
+  "topk_configs": [
+    {
+      "id": "d8-k1",
+      "dict_size": 8,
+      "k": 1
+    },
+    {
+      "id": "d16-k2",
+      "dict_size": 16,
+      "k": 2
+    },
+    {
+      "id": "d32-k4",
+      "dict_size": 32,
+      "k": 4
+    }
+  ],
+  "training": {
+    "N_train": 20000,
+    "steps": 4000,
+    "batch": 512,
+    "lr": 0.001,
+    "cosine_threshold": 0.8
+  },
+  "seeds": {
+    "base": 20260901,
+    "count": 8,
+    "detector_rng_offset": 0,
+    "training_rng_offset": 100000,
+    "torch_seed_offset": 200000
+  },
+  "analysis": {
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260909
+  },
+  "gates": {
+    "minimum_recovery_rate": 0.75,
+    "max_absolute_recovery_gap": 0.25,
+    "max_axis_cosine_penalty": 0.05
+  },
+  "reporting_boundary": "Independent held-out confirmation frozen before execution. Passing gates support only this TopK capacity/sparsity grid; they do not establish an all-objective or unknown-direction guarantee."
+}

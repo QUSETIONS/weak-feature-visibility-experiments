@@ -1,0 +1,33 @@
+{
+  "elapsed_sec": 319.79271483421326,
+  "protocol": {
+    "m": 8,
+    "n_axis": 8,
+    "n_rand": 72,
+    "p": 0.05,
+    "Ns": [
+      1024,
+      2048,
+      4096,
+      8192,
+      16384,
+      32768
+    ],
+    "n_train_extra": 0,
+    "dict_size": 192,
+    "k": 8,
+    "sae_steps": 6000,
+    "sae_batch": 512,
+    "sae_lr": 0.001,
+    "cosine_threshold": 0.8,
+    "n_seeds": 4,
+    "base_seed": 20260824,
+    "n_eval": 4096
+  },
+  "corr_ind": 0.017478088872328428,
+  "corr_sae": 0.013250186145678342,
+  "mae_ind": 0.08498255085710878,
+  "mae_sae": 0.08844475063466373,
+  "mean_rec_axis": 0.90625,
+  "mean_rec_rand": 0.8483796296296297
+}

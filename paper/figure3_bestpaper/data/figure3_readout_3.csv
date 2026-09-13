@@ -1,0 +1,4 @@
+readout,kind,rows,recovered,certified,mean_target_cosine,minimum_target_cosine
+usage-atom,atom,48,44,44,0.9237056421215323,0.0012445793008894663
+spectral-linked-atom,atom,48,47,46,0.9711006809664493,0.797300145246792
+signed-pair-span,subspace,48,48,46,0.9731575790126676,0.8225788198536841

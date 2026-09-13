@@ -1,0 +1,53 @@
+{
+  "experiment_id": "spectral-anchor-sae-v7-readout-audit",
+  "status": "completed",
+  "rows": 48,
+  "expected_rows": 48,
+  "pairs": 48,
+  "expected_pairs": 48,
+  "complete": true,
+  "shared_model_integrity": true,
+  "familywise_confidence": 0.95,
+  "readout_summary": {
+    "usage-atom": {
+      "kind": "atom",
+      "rows": 48,
+      "recovery_rate": 0.9166666666666666,
+      "certificate_pass_rate": 0.9166666666666666,
+      "minimum_target_cosine": 0.0012445793008894663,
+      "mean_target_cosine": 0.9237056421215323,
+      "rank_counts": {
+        "1": 48,
+        "2": 0
+      }
+    },
+    "spectral-linked-atom": {
+      "kind": "atom",
+      "rows": 48,
+      "recovery_rate": 0.9791666666666666,
+      "certificate_pass_rate": 0.9583333333333334,
+      "minimum_target_cosine": 0.797300145246792,
+      "mean_target_cosine": 0.9711006809664493,
+      "rank_counts": {
+        "1": 48,
+        "2": 0
+      }
+    },
+    "signed-pair-span": {
+      "kind": "subspace",
+      "rows": 48,
+      "recovery_rate": 1.0,
+      "certificate_pass_rate": 0.9583333333333334,
+      "minimum_target_cosine": 0.8225788198536841,
+      "mean_target_cosine": 0.9731575790126676,
+      "rank_counts": {
+        "1": 36,
+        "2": 12
+      }
+    }
+  },
+  "evidence_eligible": true,
+  "evidence_scope": "target_free_readout_ablation",
+  "completed_at_utc": "2026-09-04T06:28:59.993873+00:00",
+  "protocol_path": "EXTERNAL_RUN_PATH/spectral_anchor_v7_readout_audit/spectral_anchor_readout_audit_protocol.json"
+}

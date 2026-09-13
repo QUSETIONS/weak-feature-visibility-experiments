@@ -1,0 +1,31 @@
+{
+  "loaded": true,
+  "model": "EleutherAI/pythia-70m",
+  "elapsed_sec": 36.22148537635803,
+  "n_tokens": 512000,
+  "train_loss": 0.1287093162536621,
+  "token_n": 40,
+  "token_C_min": 0.6861945030812259,
+  "token_C_median": 0.9052662688221361,
+  "token_sae_mean": 0.808053734451968,
+  "token_corr_C_cos": -0.21703739952861206,
+  "pc0_sae": 0.6407524943351746,
+  "pc_last_sae": 0.6369905471801758,
+  "random_sae_mean": 0.4730184571393149,
+  "random_sae_p90": 0.5229016000797595,
+  "protocol": {
+    "layer": 3,
+    "seq_len": 128,
+    "n_train_seq": 4000,
+    "batch": 16,
+    "sae_m": 32,
+    "dict_size": 128,
+    "k": 8,
+    "sae_steps": 4000,
+    "sae_batch": 512,
+    "sae_lr": 0.001,
+    "seed": 20260824,
+    "n_natural": 40,
+    "n_random": 40
+  }
+}

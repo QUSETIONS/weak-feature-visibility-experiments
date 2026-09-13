@@ -1,0 +1,321 @@
+{
+  "experiment_id": "lm-residual-spectral-warm-start-v1-matched",
+  "status": "completed",
+  "models": {
+    "gpt2-small-l6": {
+      "experiment_id": "lm-residual-spectral-warm-start-v1-matched",
+      "model_id": "gpt2-small-l6",
+      "status": "completed",
+      "rows": 96,
+      "pairs": 48,
+      "pair_integrity": true,
+      "data_quality": {
+        "real_corpus": true,
+        "sequence_indices_disjoint": true,
+        "hidden_size_matches": true,
+        "complete_pairs": true,
+        "finite_metrics": true
+      },
+      "data_metadata": {
+        "model": {
+          "source": "EXTERNAL_RUN_PATH/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e",
+          "hf_id": "gpt2",
+          "config_name_or_path": "EXTERNAL_RUN_PATH/.cache/huggingface/hub/models--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e",
+          "commit_hash": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+          "hidden_size": 768,
+          "torch_version": "2.2.0+cu118"
+        },
+        "corpus": {
+          "source_type": "local_real_text_file",
+          "path": "EXTERNAL_RUN_PATH/iclr_warm_validation/data/wikitext2_train.txt",
+          "sha256": "4c37c0f6ae4addfd8de963f29d6c41f65f41f9626de6013e5da889cc5cc20a0c",
+          "nonempty_documents": 23767,
+          "synthetic_fallback": false
+        },
+        "split": {
+          "available_tokens": 704214,
+          "used_tokens": 704000,
+          "sequence_length": 128,
+          "train_sequences": 4000,
+          "validation_sequences": 1500,
+          "sequence_indices_disjoint": true,
+          "exact_content_overlap_sequences": 0,
+          "train_sequence_index_sha256": "1391a593d806c96de18787bb921278e26ebe71dcace97d7bf7a6f1da15c8fa17",
+          "validation_sequence_index_sha256": "3bf8273e8159a2c0fe315f931e8c154f8226bf4ea7b49161f0f646a68e8b074c"
+        },
+        "train_rows": 512000,
+        "validation_rows": 192000,
+        "train_whitened_variance_min": 0.9999999996367008,
+        "train_whitened_variance_max": 1.000000010129363,
+        "pca_eigenvalue_min_retained": 14.861713591232412,
+        "pca_eigenvalue_max_retained": 68541.32983655647,
+        "real_corpus": true
+      },
+      "variant_summary": {
+        "vanilla-random": {
+          "rows": 48,
+          "recovered": 28,
+          "recovery_rate": 0.5833333333333334,
+          "mean_oracle_target_cosine": 0.7997634583295051,
+          "mean_spectral_readout_target_cosine": 0.7546635940293123,
+          "mean_heldout_reconstruction_mse": 0.22225125487645467
+        },
+        "spectral-warm-start": {
+          "rows": 48,
+          "recovered": 31,
+          "recovery_rate": 0.6458333333333334,
+          "mean_oracle_target_cosine": 0.8343398126306084,
+          "mean_spectral_readout_target_cosine": 0.7917146523202682,
+          "mean_heldout_reconstruction_mse": 0.22248736132515803
+        }
+      },
+      "paired_cosine_improvements": 30,
+      "clustered_paired_analysis": {
+        "primary_unit": "base_seed_cluster_within_model",
+        "clusters": 8,
+        "conditions_per_cluster": 6,
+        "rows": [
+          {
+            "seed": 20270101,
+            "conditions": 6,
+            "mean_delta_recovery": 0.16666666666666666,
+            "mean_delta_cosine": 0.0654536699984888,
+            "mean_delta_heldout_mse": -0.00035737186008029387
+          },
+          {
+            "seed": 20270102,
+            "conditions": 6,
+            "mean_delta_recovery": 0.0,
+            "mean_delta_cosine": 0.022276155185061968,
+            "mean_delta_heldout_mse": 5.440266927083289e-05
+          },
+          {
+            "seed": 20270103,
+            "conditions": 6,
+            "mean_delta_recovery": 0.0,
+            "mean_delta_cosine": 0.04769090414768751,
+            "mean_delta_heldout_mse": 0.0006038996378580722
+          },
+          {
+            "seed": 20270104,
+            "conditions": 6,
+            "mean_delta_recovery": 0.16666666666666666,
+            "mean_delta_cosine": 0.06729463182596336,
+            "mean_delta_heldout_mse": 0.0007813017103407149
+          },
+          {
+            "seed": 20270105,
+            "conditions": 6,
+            "mean_delta_recovery": 0.16666666666666666,
+            "mean_delta_cosine": 0.07141923042507685,
+            "mean_delta_heldout_mse": -0.0003253216213650138
+          },
+          {
+            "seed": 20270106,
+            "conditions": 6,
+            "mean_delta_recovery": 0.0,
+            "mean_delta_cosine": 0.010169949328826764,
+            "mean_delta_heldout_mse": 0.0007742250230577258
+          },
+          {
+            "seed": 20270107,
+            "conditions": 6,
+            "mean_delta_recovery": 0.0,
+            "mean_delta_cosine": 0.009673931398099985,
+            "mean_delta_heldout_mse": -0.001724616580539291
+          },
+          {
+            "seed": 20270108,
+            "conditions": 6,
+            "mean_delta_recovery": 0.0,
+            "mean_delta_cosine": -0.017367637900379113,
+            "mean_delta_heldout_mse": 0.0020823326110839813
+          }
+        ],
+        "mean_delta_recovery": 0.0625,
+        "mean_delta_recovery_bootstrap_ci95": [
+          0.020833333333333332,
+          0.125
+        ],
+        "mean_delta_cosine": 0.034576354301103264,
+        "mean_delta_cosine_bootstrap_ci95": [
+          0.01289521204462846,
+          0.055634382576857204
+        ],
+        "mean_delta_heldout_mse": 0.00023610644870334104,
+        "mean_delta_heldout_mse_bootstrap_ci95": [
+          -0.0004893740230136455,
+          0.0009686927795410146
+        ]
+      },
+      "gaussian_certificate_asserted": false,
+      "evidence_eligible_model_specific": true,
+      "reporting_boundary": "This experiment tests known injected directions on two empirical residual backgrounds. It does not establish unknown-direction semantic discovery, a Gaussian held-out certificate, or a universal result over models, layers, objectives, and SAE scales.",
+      "protocol_path": "EXTERNAL_RUN_PATH/iclr_warm_validation/experiments/lm_spectral_warm_start_matched_protocol.json",
+      "protocol_sha256": "72b60c3ab4097b124001dfd20427d51e34fca23b17577fab2c0a5f0f17f05956",
+      "completed_at_utc": "2026-09-10T13:18:17.197971+00:00"
+    },
+    "pythia-70m-l3": {
+      "experiment_id": "lm-residual-spectral-warm-start-v1-matched",
+      "model_id": "pythia-70m-l3",
+      "status": "completed",
+      "rows": 96,
+      "pairs": 48,
+      "pair_integrity": true,
+      "data_quality": {
+        "real_corpus": true,
+        "sequence_indices_disjoint": true,
+        "hidden_size_matches": true,
+        "complete_pairs": true,
+        "finite_metrics": true
+      },
+      "data_metadata": {
+        "model": {
+          "source": "EXTERNAL_RUN_PATH/iclr_warm_validation/experiments/weights/pythia-70m",
+          "hf_id": "EleutherAI/pythia-70m",
+          "config_name_or_path": "EXTERNAL_RUN_PATH/iclr_warm_validation/experiments/weights/pythia-70m",
+          "commit_hash": null,
+          "hidden_size": 512,
+          "torch_version": "2.2.0+cu118"
+        },
+        "corpus": {
+          "source_type": "local_real_text_file",
+          "path": "EXTERNAL_RUN_PATH/iclr_warm_validation/data/wikitext2_train.txt",
+          "sha256": "4c37c0f6ae4addfd8de963f29d6c41f65f41f9626de6013e5da889cc5cc20a0c",
+          "nonempty_documents": 23767,
+          "synthetic_fallback": false
+        },
+        "split": {
+          "available_tokens": 704170,
+          "used_tokens": 704000,
+          "sequence_length": 128,
+          "train_sequences": 4000,
+          "validation_sequences": 1500,
+          "sequence_indices_disjoint": true,
+          "exact_content_overlap_sequences": 0,
+          "train_sequence_index_sha256": "1391a593d806c96de18787bb921278e26ebe71dcace97d7bf7a6f1da15c8fa17",
+          "validation_sequence_index_sha256": "3bf8273e8159a2c0fe315f931e8c154f8226bf4ea7b49161f0f646a68e8b074c"
+        },
+        "train_rows": 512000,
+        "validation_rows": 192000,
+        "train_whitened_variance_min": 0.999999998132013,
+        "train_whitened_variance_max": 1.000000000603469,
+        "pca_eigenvalue_min_retained": 0.6943724374940875,
+        "pca_eigenvalue_max_retained": 144.0070047781439,
+        "real_corpus": true
+      },
+      "variant_summary": {
+        "vanilla-random": {
+          "rows": 48,
+          "recovered": 21,
+          "recovery_rate": 0.4375,
+          "mean_oracle_target_cosine": 0.764128991292297,
+          "mean_spectral_readout_target_cosine": 0.6649493278372417,
+          "mean_heldout_reconstruction_mse": 0.3869340057373047
+        },
+        "spectral-warm-start": {
+          "rows": 48,
+          "recovered": 38,
+          "recovery_rate": 0.7916666666666666,
+          "mean_oracle_target_cosine": 0.8748361358287253,
+          "mean_spectral_readout_target_cosine": 0.7800646036438943,
+          "mean_heldout_reconstruction_mse": 0.38625904973347985
+        }
+      },
+      "paired_cosine_improvements": 33,
+      "clustered_paired_analysis": {
+        "primary_unit": "base_seed_cluster_within_model",
+        "clusters": 8,
+        "conditions_per_cluster": 6,
+        "rows": [
+          {
+            "seed": 20270101,
+            "conditions": 6,
+            "mean_delta_recovery": 0.3333333333333333,
+            "mean_delta_cosine": 0.1277445671570298,
+            "mean_delta_heldout_mse": 0.0021707450018988808
+          },
+          {
+            "seed": 20270102,
+            "conditions": 6,
+            "mean_delta_recovery": 0.5,
+            "mean_delta_cosine": 0.14377485285748534,
+            "mean_delta_heldout_mse": 0.0005373747083875965
+          },
+          {
+            "seed": 20270103,
+            "conditions": 6,
+            "mean_delta_recovery": 0.5,
+            "mean_delta_cosine": 0.17264212700807155,
+            "mean_delta_heldout_mse": -0.0030988684760199594
+          },
+          {
+            "seed": 20270104,
+            "conditions": 6,
+            "mean_delta_recovery": 0.16666666666666666,
+            "mean_delta_cosine": 0.07763632262276474,
+            "mean_delta_heldout_mse": -0.00042339324951172025
+          },
+          {
+            "seed": 20270105,
+            "conditions": 6,
+            "mean_delta_recovery": 0.3333333333333333,
+            "mean_delta_cosine": 0.06622108091421153,
+            "mean_delta_heldout_mse": -0.000739581637912314
+          },
+          {
+            "seed": 20270106,
+            "conditions": 6,
+            "mean_delta_recovery": 0.5,
+            "mean_delta_cosine": 0.1301442072886462,
+            "mean_delta_heldout_mse": -0.0009175576104058133
+          },
+          {
+            "seed": 20270107,
+            "conditions": 6,
+            "mean_delta_recovery": 0.3333333333333333,
+            "mean_delta_cosine": 0.0654547941108398,
+            "mean_delta_heldout_mse": -0.0017457012600369064
+          },
+          {
+            "seed": 20270108,
+            "conditions": 6,
+            "mean_delta_recovery": 0.16666666666666666,
+            "mean_delta_cosine": 0.10203920433237584,
+            "mean_delta_heldout_mse": -0.0011826655069987109
+          }
+        ],
+        "mean_delta_recovery": 0.35416666666666663,
+        "mean_delta_recovery_bootstrap_ci95": [
+          0.2708333333333333,
+          0.4375
+        ],
+        "mean_delta_cosine": 0.11070714453642809,
+        "mean_delta_cosine_bootstrap_ci95": [
+          0.08609169091523128,
+          0.13710928341830708
+        ],
+        "mean_delta_heldout_mse": -0.0006749560038248684,
+        "mean_delta_heldout_mse_bootstrap_ci95": [
+          -0.0016585657331678605,
+          0.00035387208726671857
+        ]
+      },
+      "gaussian_certificate_asserted": false,
+      "evidence_eligible_model_specific": true,
+      "reporting_boundary": "This experiment tests known injected directions on two empirical residual backgrounds. It does not establish unknown-direction semantic discovery, a Gaussian held-out certificate, or a universal result over models, layers, objectives, and SAE scales.",
+      "protocol_path": "EXTERNAL_RUN_PATH/iclr_warm_validation/experiments/lm_spectral_warm_start_matched_protocol.json",
+      "protocol_sha256": "72b60c3ab4097b124001dfd20427d51e34fca23b17577fab2c0a5f0f17f05956",
+      "completed_at_utc": "2026-09-10T13:14:14.701845+00:00"
+    }
+  },
+  "rows": 192,
+  "pairs": 96,
+  "pair_integrity": true,
+  "evidence_eligible": true,
+  "pooled_result_role": "descriptive_only",
+  "gaussian_certificate_asserted": false,
+  "reporting_boundary": "This experiment tests known injected directions on two empirical residual backgrounds. It does not establish unknown-direction semantic discovery, a Gaussian held-out certificate, or a universal result over models, layers, objectives, and SAE scales.",
+  "completed_at_utc": "2026-09-10T13:18:45.142696+00:00",
+  "protocol_sha256": "72b60c3ab4097b124001dfd20427d51e34fca23b17577fab2c0a5f0f17f05956"
+}

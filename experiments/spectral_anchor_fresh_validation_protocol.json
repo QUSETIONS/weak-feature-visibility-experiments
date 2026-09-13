@@ -1,0 +1,77 @@
+{
+  "experiment_id": "spectral-anchor-sae-v8-fresh-validation-confirmation",
+  "status": "frozen-before-execution",
+  "purpose": "Confirm family-wise signed-pair-span recovery using fresh validation samples after the exploratory v7 readout audit.",
+  "evidence_role": "confirmatory_validation_of_a_v7_selected_primary_readout",
+  "calibration_disclosure": {
+    "source_experiment": "spectral-anchor-sae-v7-readout-audit",
+    "source_raw_sha256": "d66acdacee669510668c22fe2699b2963fb0997bf6c91105cff84cf7bb688fe4",
+    "source_summary_sha256": "670ffef1fb3d5a40cd26e6bd1fa451b2d4f9f040921a8f5ea4f62e374ac20fcd",
+    "sample_size_chosen_after_source_experiment": true,
+    "selection_reason": "N_validation=500000 makes the conservative rank-two family-wise tolerance smaller than the v7 worst-case certificate margin under stable empirical excess risk.",
+    "v7_is_exploratory": true,
+    "v8_validation_samples_are_fresh": true
+  },
+  "feature": {
+    "m": 8,
+    "signal_strength": 0.55,
+    "distribution": "rank-one Gaussian signal plus isotropic Gaussian noise"
+  },
+  "geometry": ["axis", "dense"],
+  "objectives": [
+    {"id": "mse", "code_penalty": 0.0, "code_penalty_type": "none"},
+    {"id": "mse_l1", "code_penalty": 0.001, "code_penalty_type": "l1"},
+    {"id": "mse_l2", "code_penalty": 0.001, "code_penalty_type": "l2"}
+  ],
+  "capacities": [
+    {"id": "d16-k2", "dict_size": 16, "k": 2},
+    {"id": "d32-k4", "dict_size": 32, "k": 4}
+  ],
+  "warm_start": {
+    "variant_id": "spectral-warm-start",
+    "initialization": "training_spectral_signed_pair",
+    "anchor_pair_slots": [0, 1],
+    "post_initialization_constraints": "none"
+  },
+  "primary_readout": {
+    "id": "signed-pair-span",
+    "kind": "subspace",
+    "selection": "fixed_training_spectral_warm_start_pair_slots",
+    "slots": [0, 1],
+    "span_relative_singular_value_tolerance": 0.05
+  },
+  "seeds": {
+    "base": 20261101,
+    "count": 4,
+    "training_rng_offset": 710000,
+    "torch_seed_offset": 810000,
+    "validation_rng_offset": 1910000,
+    "v7_validation_rng_offset": 910000
+  },
+  "training": {
+    "N_train": 20000,
+    "N_validation": 500000,
+    "steps": 4000,
+    "batch": 512,
+    "lr": 0.001,
+    "decoder_columns_unit_norm": true,
+    "warm_start_uses_training_split_only": true,
+    "validation_is_never_used_for_training_or_selection": true,
+    "post_initialization_constraints": "none"
+  },
+  "certificate": {
+    "delta": 0.05,
+    "family_count": 48,
+    "noise_variance": 1.0,
+    "independent_validation": true,
+    "span_rank_max": 2,
+    "cosine_threshold": 0.80
+  },
+  "comparison": {
+    "expected_models": 48,
+    "one_primary_readout_per_model": true,
+    "fresh_validation_only_change_from_v7_training": true
+  },
+  "expected_rows": 48,
+  "evidence_status": "eligible_as_fresh_validation_confirmation_if_complete_and_all_certificates_pass"
+}

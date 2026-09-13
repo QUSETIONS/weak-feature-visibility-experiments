@@ -1,0 +1,3890 @@
+[
+  {
+    "objective_id": "mse",
+    "capacity_id": "d16-k2",
+    "geometry": "axis",
+    "seed": 20261101,
+    "shared_model_id": "mse:d16-k2:axis:20261101",
+    "data_seed": 20261811000,
+    "train_seed": 2026920100,
+    "validation_seed": 20262011000,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.40145689249038696,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9790177701624678,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.021203810824951028,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3793883365061451,
+          "bound_squared": 0.14393550987690001,
+          "cosine_lower_bound": 0.9252375317306902,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9819793572144853,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.019910295517131707,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3762760474208836,
+          "bound_squared": 0.14158366386268306,
+          "cosine_lower_bound": 0.9265076017698489,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9816712613098593,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.01929026220316163,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.37477503994337147,
+          "bound_squared": 0.14045633056455567,
+          "cosine_lower_bound": 0.9271157799516975,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4125242233276367,
+          0.0691051185131073
+        ],
+        "pair_relative_second_singular_value": 0.04892313852906227
+      }
+    },
+    "elapsed_sec": 9.144227592274547
+  },
+  {
+    "objective_id": "mse",
+    "capacity_id": "d16-k2",
+    "geometry": "dense",
+    "seed": 20261101,
+    "shared_model_id": "mse:d16-k2:dense:20261101",
+    "data_seed": 20261811001,
+    "train_seed": 2026920100,
+    "validation_seed": 20262011001,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.406995564699173,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9862602327614975,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.016889266953557282,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3689049805250454,
+          "bound_squared": 0.13609088465618413,
+          "cosine_lower_bound": 0.929467113642982,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9862602327614975,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.016889266953557282,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3689049805250454,
+          "bound_squared": 0.13609088465618413,
+          "cosine_lower_bound": 0.929467113642982,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 2,
+        "target_cosine": 0.9886381945624173,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.020162165805836324,
+          "tolerance": 0.08185765276650904,
+          "angle_sin_bound": 0.43068617254614305,
+          "bound_squared": 0.1854905792224461,
+          "cosine_lower_bound": 0.9025017566617551,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4075602293014526,
+          0.13701950013637543
+        ],
+        "pair_relative_second_singular_value": 0.09734538942575455
+      }
+    },
+    "elapsed_sec": 6.0613894537091255
+  },
+  {
+    "objective_id": "mse",
+    "capacity_id": "d32-k4",
+    "geometry": "axis",
+    "seed": 20261101,
+    "shared_model_id": "mse:d32-k4:axis:20261101",
+    "data_seed": 20261811010,
+    "train_seed": 2026920101,
+    "validation_seed": 20262011010,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.11823214590549469,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9611169904602264,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.04086126633825961,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4238824578617469,
+          "bound_squared": 0.1796763380829156,
+          "cosine_lower_bound": 0.9057172085795236,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9611169904602264,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.04086126633825961,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4238824578617469,
+          "bound_squared": 0.1796763380829156,
+          "cosine_lower_bound": 0.9057172085795236,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9602249237449347,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.04161171373731603,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4254888810525862,
+          "bound_squared": 0.18104078789938183,
+          "cosine_lower_bound": 0.9049636523643467,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4140794277191162,
+          0.019478222355246544
+        ],
+        "pair_relative_second_singular_value": 0.013774489983916283
+      }
+    },
+    "elapsed_sec": 6.953934731893241
+  },
+  {
+    "objective_id": "mse",
+    "capacity_id": "d32-k4",
+    "geometry": "dense",
+    "seed": 20261101,
+    "shared_model_id": "mse:d32-k4:dense:20261101",
+    "data_seed": 20261811011,
+    "train_seed": 2026920101,
+    "validation_seed": 20262011011,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.12853658199310303,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 22,
+        "rank": 1,
+        "target_cosine": 0.01953740611942699,
+        "recovered": false,
+        "certificate": {
+          "empirical_excess": 0.5497355572317901,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 1.0,
+          "bound_squared": 1.0,
+          "cosine_lower_bound": 0.0,
+          "confidence": 0.9996527777777777,
+          "certified": false,
+          "independent_validation": true
+        },
+        "certified": false
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9724477086690054,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.02707031168363148,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.39319444944518334,
+          "bound_squared": 0.15460187507450085,
+          "cosine_lower_bound": 0.9194553414524814,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 2,
+        "target_cosine": 0.9774826726264499,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.02186657052479285,
+          "tolerance": 0.08185765276650904,
+          "angle_sin_bound": 0.43426892232034764,
+          "bound_squared": 0.18858949689327614,
+          "cosine_lower_bound": 0.9007832719953917,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4094712734222412,
+          0.11571838706731796
+        ],
+        "pair_relative_second_singular_value": 0.08210056275129318
+      }
+    },
+    "elapsed_sec": 7.701946252956986
+  },
+  {
+    "objective_id": "mse_l1",
+    "capacity_id": "d16-k2",
+    "geometry": "axis",
+    "seed": 20261101,
+    "shared_model_id": "mse_l1:d16-k2:axis:20261101",
+    "data_seed": 20261811100,
+    "train_seed": 2026920110,
+    "validation_seed": 20262011100,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.3993195593357086,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9727519273239436,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.02936378567265961,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3984618272580508,
+          "bound_squared": 0.15877182778182472,
+          "cosine_lower_bound": 0.9171849171340397,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9725154921090029,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.031042633389025517,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4022738845304493,
+          "bound_squared": 0.16182427817521727,
+          "cosine_lower_bound": 0.9155193727195415,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 2,
+        "target_cosine": 0.977228382314945,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.01982948544373616,
+          "tolerance": 0.08185765276650904,
+          "angle_sin_bound": 0.4299833785587641,
+          "bound_squared": 0.18488570583680944,
+          "cosine_lower_bound": 0.9028368037265597,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4075653553009033,
+          0.13696587085723877
+        ],
+        "pair_relative_second_singular_value": 0.09730693697929382
+      }
+    },
+    "elapsed_sec": 8.653760544024408
+  },
+  {
+    "objective_id": "mse_l1",
+    "capacity_id": "d16-k2",
+    "geometry": "dense",
+    "seed": 20261101,
+    "shared_model_id": "mse_l1:d16-k2:dense:20261101",
+    "data_seed": 20261811101,
+    "train_seed": 2026920110,
+    "validation_seed": 20262011101,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.38547489047050476,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9849095754464937,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.018382072244631786,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3725655326174194,
+          "bound_squared": 0.1388050760945014,
+          "cosine_lower_bound": 0.9280058857062807,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9849095754464937,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.018382072244631786,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3725655326174194,
+          "bound_squared": 0.1388050760945014,
+          "cosine_lower_bound": 0.9280058857062807,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 2,
+        "target_cosine": 0.9852224600699353,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.010970687719490686,
+          "tolerance": 0.08185765276650904,
+          "angle_sin_bound": 0.4108269719524703,
+          "bound_squared": 0.16877880088363584,
+          "cosine_lower_bound": 0.911713331654399,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4070721864700317,
+          0.14194338023662567
+        ],
+        "pair_relative_second_singular_value": 0.10087853670120239
+      }
+    },
+    "elapsed_sec": 8.238236027769744
+  },
+  {
+    "objective_id": "mse_l1",
+    "capacity_id": "d32-k4",
+    "geometry": "axis",
+    "seed": 20261101,
+    "shared_model_id": "mse_l1:d32-k4:axis:20261101",
+    "data_seed": 20261811110,
+    "train_seed": 2026920111,
+    "validation_seed": 20262011110,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.12272441387176514,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9645349981367843,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.036617649565905616,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4146814093060963,
+          "bound_squared": 0.17196067122409017,
+          "cosine_lower_bound": 0.9099666635519731,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9645349981367843,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.036617649565905616,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4146814093060963,
+          "bound_squared": 0.17196067122409017,
+          "cosine_lower_bound": 0.9099666635519731,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9636678890727726,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.0373931799506664,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.41637810517498364,
+          "bound_squared": 0.17337072646910975,
+          "cosine_lower_bound": 0.9091915494167828,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4141507148742676,
+          0.013340136967599392
+        ],
+        "pair_relative_second_singular_value": 0.009433320723474026
+      }
+    },
+    "elapsed_sec": 7.482771382667124
+  },
+  {
+    "objective_id": "mse_l1",
+    "capacity_id": "d32-k4",
+    "geometry": "dense",
+    "seed": 20261101,
+    "shared_model_id": "mse_l1:d32-k4:dense:20261101",
+    "data_seed": 20261811111,
+    "train_seed": 2026920111,
+    "validation_seed": 20262011111,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.11397990584373474,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9661189857624923,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.03515248423771309,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.41145684374395836,
+          "bound_squared": 0.16929673426374015,
+          "cosine_lower_bound": 0.9114292434063436,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9667755870905894,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.03465519591670877,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4103566420567552,
+          "bound_squared": 0.1683925736800959,
+          "cosine_lower_bound": 0.9119251210049563,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9665569773472246,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.03478698065542165,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.41064848994722664,
+          "bound_squared": 0.1686321822959375,
+          "cosine_lower_bound": 0.9117937363812402,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4140530824661255,
+          0.021305380389094353
+        ],
+        "pair_relative_second_singular_value": 0.015066889114677906
+      }
+    },
+    "elapsed_sec": 8.722547773271799
+  },
+  {
+    "objective_id": "mse_l2",
+    "capacity_id": "d16-k2",
+    "geometry": "axis",
+    "seed": 20261101,
+    "shared_model_id": "mse_l2:d16-k2:axis:20261101",
+    "data_seed": 20261811200,
+    "train_seed": 2026920120,
+    "validation_seed": 20262011200,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.4516906440258026,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.995753258623445,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.0047095287077102985,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3375587445577013,
+          "bound_squared": 0.11394590602737142,
+          "cosine_lower_bound": 0.9413044640139706,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.995753258623445,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.0047095287077102985,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3375587445577013,
+          "bound_squared": 0.11394590602737142,
+          "cosine_lower_bound": 0.9413044640139706,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9950544366705136,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.005349453979513925,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3392777719237732,
+          "bound_squared": 0.11510940652155985,
+          "cosine_lower_bound": 0.9406862354039418,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4140031337738037,
+          0.024398671463131905
+        ],
+        "pair_relative_second_singular_value": 0.017255034297704697
+      }
+    },
+    "elapsed_sec": 8.562736225314438
+  },
+  {
+    "objective_id": "mse_l2",
+    "capacity_id": "d16-k2",
+    "geometry": "dense",
+    "seed": 20261101,
+    "shared_model_id": "mse_l2:d16-k2:dense:20261101",
+    "data_seed": 20261811201,
+    "train_seed": 2026920120,
+    "validation_seed": 20262011201,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.48135292530059814,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.797300145246792,
+        "recovered": false,
+        "certificate": {
+          "empirical_excess": 0.20449151715148164,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.6907864250374688,
+          "bound_squared": 0.47718588501604653,
+          "cosine_lower_bound": 0.7230588599719621,
+          "confidence": 0.9996527777777777,
+          "certified": false,
+          "independent_validation": true
+        },
+        "certified": false
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.797300145246792,
+        "recovered": false,
+        "certificate": {
+          "empirical_excess": 0.20449151715148164,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.6907864250374688,
+          "bound_squared": 0.47718588501604653,
+          "cosine_lower_bound": 0.7230588599719621,
+          "confidence": 0.9996527777777777,
+          "certified": false,
+          "independent_validation": true
+        },
+        "certified": false
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 2,
+        "target_cosine": 0.8729168331079334,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.1314839107418291,
+          "tolerance": 0.08185765276650904,
+          "angle_sin_bound": 0.6228111686806379,
+          "bound_squared": 0.38789375183334207,
+          "cosine_lower_bound": 0.7823721928638938,
+          "confidence": 0.9996527777777777,
+          "certified": false,
+          "independent_validation": true
+        },
+        "certified": false,
+        "pair_singular_values": [
+          1.1444071531295776,
+          0.830862283706665
+        ],
+        "pair_relative_second_singular_value": 0.7260197997093201
+      }
+    },
+    "elapsed_sec": 7.696381733752787
+  },
+  {
+    "objective_id": "mse_l2",
+    "capacity_id": "d32-k4",
+    "geometry": "axis",
+    "seed": 20261101,
+    "shared_model_id": "mse_l2:d32-k4:axis:20261101",
+    "data_seed": 20261811210,
+    "train_seed": 2026920121,
+    "validation_seed": 20262011210,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.11641214787960052,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9230245715937961,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.07666124199997462,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.49473953038179336,
+          "bound_squared": 0.24476720292239743,
+          "cosine_lower_bound": 0.8690413091893864,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9230245715937961,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.07666124199997462,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.49473953038179336,
+          "bound_squared": 0.24476720292239743,
+          "cosine_lower_bound": 0.8690413091893864,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9219532041116656,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.07764138816327973,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.49653729654043055,
+          "bound_squared": 0.24654928685567945,
+          "cosine_lower_bound": 0.8680153876195517,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4141738414764404,
+          0.010616867803037167
+        ],
+        "pair_relative_second_singular_value": 0.007507469970732927
+      }
+    },
+    "elapsed_sec": 9.0758375832811
+  },
+  {
+    "objective_id": "mse_l2",
+    "capacity_id": "d32-k4",
+    "geometry": "dense",
+    "seed": 20261101,
+    "shared_model_id": "mse_l2:d32-k4:dense:20261101",
+    "data_seed": 20261811211,
+    "train_seed": 2026920121,
+    "validation_seed": 20262011211,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.11113326996564865,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 12,
+        "rank": 1,
+        "target_cosine": 0.5096324749483191,
+        "recovered": false,
+        "certificate": {
+          "empirical_excess": 0.41583446532754126,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.9281410403546976,
+          "bound_squared": 0.8614457907907004,
+          "cosine_lower_bound": 0.372228705514902,
+          "confidence": 0.9996527777777777,
+          "certified": false,
+          "independent_validation": true
+        },
+        "certified": false
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.8080525329197799,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.18313807921513434,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.6620887043323621,
+          "bound_squared": 0.43836145240450597,
+          "cosine_lower_bound": 0.7494254783469094,
+          "confidence": 0.9996527777777777,
+          "certified": false,
+          "independent_validation": true
+        },
+        "certified": false
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 2,
+        "target_cosine": 0.8225788198536841,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.15876367225572716,
+          "tolerance": 0.08185765276650904,
+          "angle_sin_bound": 0.6614327767976483,
+          "bound_squared": 0.43749331822224763,
+          "cosine_lower_bound": 0.7500044545052732,
+          "confidence": 0.9996527777777777,
+          "certified": false,
+          "independent_validation": true
+        },
+        "certified": false,
+        "pair_singular_values": [
+          1.3618098497390747,
+          0.3814106583595276
+        ],
+        "pair_relative_second_singular_value": 0.2800762951374054
+      }
+    },
+    "elapsed_sec": 7.738791115581989
+  },
+  {
+    "objective_id": "mse",
+    "capacity_id": "d16-k2",
+    "geometry": "axis",
+    "seed": 20261102,
+    "shared_model_id": "mse:d16-k2:axis:20261102",
+    "data_seed": 20261812000,
+    "train_seed": 2026920200,
+    "validation_seed": 20262012000,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.382523775100708,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9898896174101313,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.010596756628763922,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.35305800768843,
+          "bound_squared": 0.12464995679292347,
+          "cosine_lower_bound": 0.9356014339488138,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9905670880857216,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.009295263826157838,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.34969072942062757,
+          "bound_squared": 0.12228360624273057,
+          "cosine_lower_bound": 0.9368651950826594,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 2,
+        "target_cosine": 0.9926020363549587,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.006519844493093795,
+          "tolerance": 0.08185765276650904,
+          "angle_sin_bound": 0.40085703019134306,
+          "bound_squared": 0.16068635865382333,
+          "cosine_lower_bound": 0.9161406231284457,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4108489751815796,
+          0.09749506413936615
+        ],
+        "pair_relative_second_singular_value": 0.06910382956266403
+      }
+    },
+    "elapsed_sec": 6.683709116652608
+  },
+  {
+    "objective_id": "mse",
+    "capacity_id": "d16-k2",
+    "geometry": "dense",
+    "seed": 20261102,
+    "shared_model_id": "mse:d16-k2:dense:20261102",
+    "data_seed": 20261812001,
+    "train_seed": 2026920200,
+    "validation_seed": 20262012001,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.3703734576702118,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9714285106250018,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.03418912190363167,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.40932281439420415,
+          "bound_squared": 0.1675451663835921,
+          "cosine_lower_bound": 0.9123896281832712,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9714285106250018,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.03418912190363167,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.40932281439420415,
+          "bound_squared": 0.1675451663835921,
+          "cosine_lower_bound": 0.9123896281832712,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9718447632389312,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.03368183803068954,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4081946007349336,
+          "bound_squared": 0.16662283206915185,
+          "cosine_lower_bound": 0.9128949380574132,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4132963418960571,
+          0.050924722105264664
+        ],
+        "pair_relative_second_singular_value": 0.03603258728981018
+      }
+    },
+    "elapsed_sec": 6.428442851640284
+  },
+  {
+    "objective_id": "mse",
+    "capacity_id": "d32-k4",
+    "geometry": "axis",
+    "seed": 20261102,
+    "shared_model_id": "mse:d32-k4:axis:20261102",
+    "data_seed": 20261812010,
+    "train_seed": 2026920201,
+    "validation_seed": 20262012010,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.11331453919410706,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9966147821351803,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.004036533905975666,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.33574138725383057,
+          "bound_squared": 0.11272227911512664,
+          "cosine_lower_bound": 0.9419542031780915,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9975602474155316,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.002980304063916047,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.33286913527762346,
+          "bound_squared": 0.11080186122047278,
+          "cosine_lower_bound": 0.9429730318410634,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9971682856047643,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.003420132341083137,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.33406818016258333,
+          "bound_squared": 0.11160154899714023,
+          "cosine_lower_bound": 0.9425489117297096,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.414099097251892,
+          0.01799965649843216
+        ],
+        "pair_relative_second_singular_value": 0.012728709727525711
+      }
+    },
+    "elapsed_sec": 6.517480913549662
+  },
+  {
+    "objective_id": "mse",
+    "capacity_id": "d32-k4",
+    "geometry": "dense",
+    "seed": 20261102,
+    "shared_model_id": "mse:d32-k4:dense:20261102",
+    "data_seed": 20261812011,
+    "train_seed": 2026920201,
+    "validation_seed": 20262012011,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.11390341818332672,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9287754318739755,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.07425116428459597,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4902909783382627,
+          "bound_squared": 0.2403852434398908,
+          "cosine_lower_bound": 0.8715588084346972,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9287754318739755,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.07425116428459597,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4902909783382627,
+          "bound_squared": 0.2403852434398908,
+          "cosine_lower_bound": 0.8715588084346972,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9281054295576117,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.07499989707681974,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4916773085972024,
+          "bound_squared": 0.24174657578938857,
+          "cosine_lower_bound": 0.8707774826042595,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.414128065109253,
+          0.015545286238193512
+        ],
+        "pair_relative_second_singular_value": 0.01099284179508686
+      }
+    },
+    "elapsed_sec": 6.574608352035284
+  },
+  {
+    "objective_id": "mse_l1",
+    "capacity_id": "d16-k2",
+    "geometry": "axis",
+    "seed": 20261102,
+    "shared_model_id": "mse_l1:d16-k2:axis:20261102",
+    "data_seed": 20261812100,
+    "train_seed": 2026920210,
+    "validation_seed": 20262012100,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.4264669418334961,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.995690962061168,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.004641832238199241,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3373763796375664,
+          "bound_squared": 0.1138228215373513,
+          "cosine_lower_bound": 0.9413698414877378,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9953667889925764,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.005270206345628526,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3390653623042252,
+          "bound_squared": 0.11496531991449548,
+          "cosine_lower_bound": 0.9407628181882534,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9960338784704938,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.0043908953334601646,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.33669952868937003,
+          "bound_squared": 0.11336657261964392,
+          "cosine_lower_bound": 0.9416121427532443,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4134966135025024,
+          0.04502822831273079
+        ],
+        "pair_relative_second_singular_value": 0.03185591474175453
+      }
+    },
+    "elapsed_sec": 7.934278109110892
+  },
+  {
+    "objective_id": "mse_l1",
+    "capacity_id": "d16-k2",
+    "geometry": "dense",
+    "seed": 20261102,
+    "shared_model_id": "mse_l1:d16-k2:dense:20261102",
+    "data_seed": 20261812101,
+    "train_seed": 2026920210,
+    "validation_seed": 20262012101,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.4254636764526367,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9979551833186606,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.0021031059185093698,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3304647568221936,
+          "bound_squared": 0.10920695550155154,
+          "cosine_lower_bound": 0.9438183323598077,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9979551833186606,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.0021031059185093698,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3304647568221936,
+          "bound_squared": 0.10920695550155154,
+          "cosine_lower_bound": 0.9438183323598077,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9981303519167253,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.001981958332387491,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.33013131805866003,
+          "bound_squared": 0.10898668716314813,
+          "cosine_lower_bound": 0.943935015155626,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4131436347961426,
+          0.054999928921461105
+        ],
+        "pair_relative_second_singular_value": 0.038920268416404724
+      }
+    },
+    "elapsed_sec": 8.374501464888453
+  },
+  {
+    "objective_id": "mse_l1",
+    "capacity_id": "d32-k4",
+    "geometry": "axis",
+    "seed": 20261102,
+    "shared_model_id": "mse_l1:d32-k4:axis:20261102",
+    "data_seed": 20261812110,
+    "train_seed": 2026920211,
+    "validation_seed": 20262012110,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.10920210182666779,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9769435517513014,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.029535387537722554,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.39885314487019935,
+          "bound_squared": 0.15908383117284824,
+          "cosine_lower_bound": 0.9170148138537085,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9769435517513014,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.029535387537722554,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.39885314487019935,
+          "bound_squared": 0.15908383117284824,
+          "cosine_lower_bound": 0.9170148138537085,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.975370650223599,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.03134139975943709,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.40294849516753845,
+          "bound_squared": 0.16236748975778376,
+          "cosine_lower_bound": 0.9152226561018997,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4141207933425903,
+          0.01620061695575714
+        ],
+        "pair_relative_second_singular_value": 0.011456317268311977
+      }
+    },
+    "elapsed_sec": 7.8057286106050014
+  },
+  {
+    "objective_id": "mse_l1",
+    "capacity_id": "d32-k4",
+    "geometry": "dense",
+    "seed": 20261102,
+    "shared_model_id": "mse_l1:d32-k4:dense:20261102",
+    "data_seed": 20261812111,
+    "train_seed": 2026920211,
+    "validation_seed": 20262012111,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.11910850554704666,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9930458204829747,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.005887770639769492,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3407171320694938,
+          "bound_squared": 0.11608816408566086,
+          "cosine_lower_bound": 0.9401658555352557,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9930458204829747,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.005887770639769492,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3407171320694938,
+          "bound_squared": 0.11608816408566086,
+          "cosine_lower_bound": 0.9401658555352557,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9929951905607369,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.005949560482418207,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.34088195794748816,
+          "bound_squared": 0.11620050925411307,
+          "cosine_lower_bound": 0.9401061061103086,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4139577150344849,
+          0.026901928707957268
+        ],
+        "pair_relative_second_singular_value": 0.019025977700948715
+      }
+    },
+    "elapsed_sec": 8.239657525904477
+  },
+  {
+    "objective_id": "mse_l2",
+    "capacity_id": "d16-k2",
+    "geometry": "axis",
+    "seed": 20261102,
+    "shared_model_id": "mse_l2:d16-k2:axis:20261102",
+    "data_seed": 20261812200,
+    "train_seed": 2026920220,
+    "validation_seed": 20262012200,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.4210256040096283,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.994441830337069,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.007190553167385425,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3441756231786573,
+          "bound_squared": 0.11845685959041712,
+          "cosine_lower_bound": 0.9389052883063248,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9968542579699571,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.004208825427737909,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3362075793723598,
+          "bound_squared": 0.11303553642742162,
+          "cosine_lower_bound": 0.9417879079562332,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9962381462915211,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.005053061818894513,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.33848266083223527,
+          "bound_squared": 0.11457051168407001,
+          "cosine_lower_bound": 0.9409726288877536,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.413375973701477,
+          0.048668473958969116
+        ],
+        "pair_relative_second_singular_value": 0.034434203058481216
+      }
+    },
+    "elapsed_sec": 7.825225168839097
+  },
+  {
+    "objective_id": "mse_l2",
+    "capacity_id": "d16-k2",
+    "geometry": "dense",
+    "seed": 20261102,
+    "shared_model_id": "mse_l2:d16-k2:dense:20261102",
+    "data_seed": 20261812201,
+    "train_seed": 2026920220,
+    "validation_seed": 20262012201,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.44961604475975037,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9905977443655155,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.01003302455901224,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.35160345475176286,
+          "bound_squared": 0.12362498939337495,
+          "cosine_lower_bound": 0.9361490322628256,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.992704711205007,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.0077181825839475575,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.34556647088852277,
+          "bound_squared": 0.11941618580234827,
+          "cosine_lower_bound": 0.938394274384521,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9919651380314033,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.008532885180559183,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3477031251667621,
+          "bound_squared": 0.12089746325073303,
+          "cosine_lower_bound": 0.937604680422014,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4137661457061768,
+          0.03557543084025383
+        ],
+        "pair_relative_second_singular_value": 0.025163589045405388
+      }
+    },
+    "elapsed_sec": 8.435073169879615
+  },
+  {
+    "objective_id": "mse_l2",
+    "capacity_id": "d32-k4",
+    "geometry": "axis",
+    "seed": 20261102,
+    "shared_model_id": "mse_l2:d32-k4:axis:20261102",
+    "data_seed": 20261812210,
+    "train_seed": 2026920221,
+    "validation_seed": 20262012210,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.11826574057340622,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9491210352637376,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.05756576355064648,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4583101037467386,
+          "bound_squared": 0.2100481511963463,
+          "cosine_lower_bound": 0.8887923541545875,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9505201232044251,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.05593315744770367,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.45506018993504915,
+          "bound_squared": 0.207079776463723,
+          "cosine_lower_bound": 0.890460680511092,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9498819453453675,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.056687416306685966,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4565645148358851,
+          "bound_squared": 0.20845115620732715,
+          "cosine_lower_bound": 0.8896903077996707,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.414122223854065,
+          0.016075054183602333
+        ],
+        "pair_relative_second_singular_value": 0.011367513798177242
+      }
+    },
+    "elapsed_sec": 7.768741746433079
+  },
+  {
+    "objective_id": "mse_l2",
+    "capacity_id": "d32-k4",
+    "geometry": "dense",
+    "seed": 20261102,
+    "shared_model_id": "mse_l2:d32-k4:dense:20261102",
+    "data_seed": 20261812211,
+    "train_seed": 2026920221,
+    "validation_seed": 20262012211,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.10314629971981049,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9821963525249402,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.01907480724841656,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3742520464649472,
+          "bound_squared": 0.140064594283201,
+          "cosine_lower_bound": 0.9273270219921336,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9831295194111093,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.017950759869486143,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.37151160382423426,
+          "bound_squared": 0.1380208717760548,
+          "cosine_lower_bound": 0.9284283107617654,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9827158544917177,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.018456104837184677,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3727461345315789,
+          "bound_squared": 0.1389396808082339,
+          "cosine_lower_bound": 0.9279333592407194,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4141374826431274,
+          0.014676210470497608
+        ],
+        "pair_relative_second_singular_value": 0.01037820614874363
+      }
+    },
+    "elapsed_sec": 7.999384204857051
+  },
+  {
+    "objective_id": "mse",
+    "capacity_id": "d16-k2",
+    "geometry": "axis",
+    "seed": 20261103,
+    "shared_model_id": "mse:d16-k2:axis:20261103",
+    "data_seed": 20261813000,
+    "train_seed": 2026920300,
+    "validation_seed": 20262013000,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.4188612103462219,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9944747966196796,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.00619543173208556,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.34153703736179464,
+          "bound_squared": 0.1166475478898719,
+          "cosine_lower_bound": 0.9398683163667814,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9944747966196796,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.00619543173208556,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.34153703736179464,
+          "bound_squared": 0.1166475478898719,
+          "cosine_lower_bound": 0.9398683163667814,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9933815566073017,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.0072457118830377325,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.344321286249239,
+          "bound_squared": 0.11855714816433038,
+          "cosine_lower_bound": 0.9388518796038434,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4137475490570068,
+          0.03630398213863373
+        ],
+        "pair_relative_second_singular_value": 0.025679253041744232
+      }
+    },
+    "elapsed_sec": 6.410525469109416
+  },
+  {
+    "objective_id": "mse",
+    "capacity_id": "d16-k2",
+    "geometry": "dense",
+    "seed": 20261103,
+    "shared_model_id": "mse:d16-k2:dense:20261103",
+    "data_seed": 20261813001,
+    "train_seed": 2026920300,
+    "validation_seed": 20262013001,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.4166111946105957,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9825341120910212,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.0181567550522494,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3720153336517031,
+          "bound_squared": 0.13839540847198797,
+          "cosine_lower_bound": 0.9282265841528199,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9825341120910212,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.0181567550522494,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3720153336517031,
+          "bound_squared": 0.13839540847198797,
+          "cosine_lower_bound": 0.9282265841528199,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 2,
+        "target_cosine": 0.9832711429424671,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.008905056198817768,
+          "tolerance": 0.08185765276650904,
+          "angle_sin_bound": 0.40623036224497683,
+          "bound_squared": 0.16502310720968508,
+          "cosine_lower_bound": 0.9137707003347804,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4107176065444946,
+          0.09937672317028046
+        ],
+        "pair_relative_second_singular_value": 0.07044409215450287
+      }
+    },
+    "elapsed_sec": 6.803965874016285
+  },
+  {
+    "objective_id": "mse",
+    "capacity_id": "d32-k4",
+    "geometry": "axis",
+    "seed": 20261103,
+    "shared_model_id": "mse:d32-k4:axis:20261103",
+    "data_seed": 20261813010,
+    "train_seed": 2026920301,
+    "validation_seed": 20262013010,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.10527826845645905,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9911300498820887,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.009300173764320779,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.34970349355279085,
+          "bound_squared": 0.12229253340302684,
+          "cosine_lower_bound": 0.9368604306923061,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9914988937052738,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.009218653093955502,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3494915077685904,
+          "bound_squared": 0.1221443140023627,
+          "cosine_lower_bound": 0.9369395316655378,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9913806989313325,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.00918878737638721,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.34941381297494967,
+          "bound_squared": 0.1220900126976931,
+          "cosine_lower_bound": 0.9369685092372672,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4141191244125366,
+          0.016346320509910583
+        ],
+        "pair_relative_second_singular_value": 0.01155936624854803
+      }
+    },
+    "elapsed_sec": 6.75637664552778
+  },
+  {
+    "objective_id": "mse",
+    "capacity_id": "d32-k4",
+    "geometry": "dense",
+    "seed": 20261103,
+    "shared_model_id": "mse:d32-k4:dense:20261103",
+    "data_seed": 20261813011,
+    "train_seed": 2026920301,
+    "validation_seed": 20262013011,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.11167693138122559,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9774829925974508,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.025472716911262645,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.38948319258545355,
+          "bound_squared": 0.1516971573065575,
+          "cosine_lower_bound": 0.9210335730544476,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9785528929662916,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.02441927779576613,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.38701655450406797,
+          "bound_squared": 0.1497818134602002,
+          "cosine_lower_bound": 0.9220727664017627,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9780513428612784,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.024910634423123343,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3881690213635089,
+          "bound_squared": 0.15067518914630423,
+          "cosine_lower_bound": 0.921588200257412,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4141652584075928,
+          0.01168743148446083
+        ],
+        "pair_relative_second_singular_value": 0.008264544419944286
+      }
+    },
+    "elapsed_sec": 6.589559238404036
+  },
+  {
+    "objective_id": "mse_l1",
+    "capacity_id": "d16-k2",
+    "geometry": "axis",
+    "seed": 20261103,
+    "shared_model_id": "mse_l1:d16-k2:axis:20261103",
+    "data_seed": 20261813100,
+    "train_seed": 2026920310,
+    "validation_seed": 20262013100,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.40547454357147217,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9933361163627037,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.007542806296040454,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3451047954235573,
+          "bound_squared": 0.11909731982433534,
+          "cosine_lower_bound": 0.9385641587955853,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9958216685184273,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.005838286144541748,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3405850734782073,
+          "bound_squared": 0.11599819227615588,
+          "cosine_lower_bound": 0.9402137032206264,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 2,
+        "target_cosine": 0.9973916922332059,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": -0.0022732969158254807,
+          "tolerance": 0.08185765276650904,
+          "angle_sin_bound": 0.3803929926003168,
+          "bound_squared": 0.14469882881942464,
+          "cosine_lower_bound": 0.9248249408296553,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4104301929473877,
+          0.10337647050619125
+        ],
+        "pair_relative_second_singular_value": 0.07329428195953369
+      }
+    },
+    "elapsed_sec": 7.331646857783198
+  },
+  {
+    "objective_id": "mse_l1",
+    "capacity_id": "d16-k2",
+    "geometry": "dense",
+    "seed": 20261103,
+    "shared_model_id": "mse_l1:d16-k2:dense:20261103",
+    "data_seed": 20261813101,
+    "train_seed": 2026920310,
+    "validation_seed": 20262013101,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.37200841307640076,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9925787726061094,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.007993151882074641,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.34628908440890993,
+          "bound_squared": 0.11991612998076114,
+          "cosine_lower_bound": 0.9381278537700706,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9925787704291401,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.007993154007430649,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3462890899884731,
+          "bound_squared": 0.11991613384504479,
+          "cosine_lower_bound": 0.9381278517104986,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 2,
+        "target_cosine": 0.9947745652475574,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.008519698757850695,
+          "tolerance": 0.08185765276650904,
+          "angle_sin_bound": 0.4053670649140328,
+          "bound_squared": 0.16432245731701767,
+          "cosine_lower_bound": 0.9141540038106174,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4111617803573608,
+          0.09285904467105865
+        ],
+        "pair_relative_second_singular_value": 0.06580325961112976
+      }
+    },
+    "elapsed_sec": 7.323016811162233
+  },
+  {
+    "objective_id": "mse_l1",
+    "capacity_id": "d32-k4",
+    "geometry": "axis",
+    "seed": 20261103,
+    "shared_model_id": "mse_l1:d32-k4:axis:20261103",
+    "data_seed": 20261813110,
+    "train_seed": 2026920311,
+    "validation_seed": 20262013110,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.10948872566223145,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.967821770236388,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.034533090324319074,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4100860440348033,
+          "bound_squared": 0.16817056351211465,
+          "cosine_lower_bound": 0.9120468389769713,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.967821770236388,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.034533090324319074,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4100860440348033,
+          "bound_squared": 0.16817056351211465,
+          "cosine_lower_bound": 0.9120468389769713,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9680512005658037,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.03423689702592868,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.40942890743365196,
+          "bound_squared": 0.16763203024231393,
+          "cosine_lower_bound": 0.9123420245487358,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4141477346420288,
+          0.013639084063470364
+        ],
+        "pair_relative_second_singular_value": 0.009644737467169762
+      }
+    },
+    "elapsed_sec": 8.188880757428706
+  },
+  {
+    "objective_id": "mse_l1",
+    "capacity_id": "d32-k4",
+    "geometry": "dense",
+    "seed": 20261103,
+    "shared_model_id": "mse_l1:d32-k4:dense:20261103",
+    "data_seed": 20261813111,
+    "train_seed": 2026920311,
+    "validation_seed": 20262013111,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.11002390086650848,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9128026402909293,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.09270445067042894,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.523389599851119,
+          "bound_squared": 0.2739366732323144,
+          "cosine_lower_bound": 0.852093496494185,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9150542374727552,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.09056138720207135,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.5196539177172986,
+          "bound_squared": 0.270040194198937,
+          "cosine_lower_bound": 0.8543768523321913,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9139786779756077,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.09158266478691485,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.5214374962879215,
+          "bound_squared": 0.27189706253501605,
+          "cosine_lower_bound": 0.8532894804607543,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4141358137130737,
+          0.014827829785645008
+        ],
+        "pair_relative_second_singular_value": 0.010485435836017132
+      }
+    },
+    "elapsed_sec": 7.8837142726406455
+  },
+  {
+    "objective_id": "mse_l2",
+    "capacity_id": "d16-k2",
+    "geometry": "axis",
+    "seed": 20261103,
+    "shared_model_id": "mse_l2:d16-k2:axis:20261103",
+    "data_seed": 20261813200,
+    "train_seed": 2026920320,
+    "validation_seed": 20262013200,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.3901180326938629,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9928003536253796,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.008932237940982607,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.34874569413653783,
+          "bound_squared": 0.12162355917877561,
+          "cosine_lower_bound": 0.9372173925089229,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9928003536253796,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.008932237940982607,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.34874569413653783,
+          "bound_squared": 0.12162355917877561,
+          "cosine_lower_bound": 0.9372173925089229,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9929204842344193,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.00877819069027273,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3483439008629174,
+          "bound_squared": 0.12134347326839402,
+          "cosine_lower_bound": 0.9373668047950098,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4139593839645386,
+          0.026814501732587814
+        ],
+        "pair_relative_second_singular_value": 0.018964124843478203
+      }
+    },
+    "elapsed_sec": 7.922689683735371
+  },
+  {
+    "objective_id": "mse_l2",
+    "capacity_id": "d16-k2",
+    "geometry": "dense",
+    "seed": 20261103,
+    "shared_model_id": "mse_l2:d16-k2:dense:20261103",
+    "data_seed": 20261813201,
+    "train_seed": 2026920320,
+    "validation_seed": 20262013201,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.4299817681312561,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9907929460268023,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.00991379842024681,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.35129505347445417,
+          "bound_squared": 0.12340821459561963,
+          "cosine_lower_bound": 0.9362648051723296,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.992471885549104,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.007903606608610688,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.34605392700075643,
+          "bound_squared": 0.11975332039264484,
+          "cosine_lower_bound": 0.9382146234243821,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9918200825795834,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.008704346813240837,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3481511333800173,
+          "bound_squared": 0.12120921167379058,
+          "cosine_lower_bound": 0.9374384184180897,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4139459133148193,
+          0.02750980108976364
+        ],
+        "pair_relative_second_singular_value": 0.0194560494273901
+      }
+    },
+    "elapsed_sec": 7.780803624540567
+  },
+  {
+    "objective_id": "mse_l2",
+    "capacity_id": "d32-k4",
+    "geometry": "axis",
+    "seed": 20261103,
+    "shared_model_id": "mse_l2:d32-k4:axis:20261103",
+    "data_seed": 20261813210,
+    "train_seed": 2026920321,
+    "validation_seed": 20262013210,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.12092039734125137,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9762183675577558,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.027257687652426015,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3936274363584521,
+          "bound_squared": 0.15494255865412726,
+          "cosine_lower_bound": 0.9192700589847755,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9763704185903126,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.027302456525004317,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.39373081744291955,
+          "bound_squared": 0.15502395660426965,
+          "cosine_lower_bound": 0.9192257847752805,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.976458908299507,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.027106133857545355,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.39327726389889206,
+          "bound_squared": 0.1546670062997988,
+          "cosine_lower_bound": 0.9194199223968346,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4139753580093384,
+          0.025958988815546036
+        ],
+        "pair_relative_second_singular_value": 0.0183588694781065
+      }
+    },
+    "elapsed_sec": 7.867941549047828
+  },
+  {
+    "objective_id": "mse_l2",
+    "capacity_id": "d32-k4",
+    "geometry": "dense",
+    "seed": 20261103,
+    "shared_model_id": "mse_l2:d32-k4:dense:20261103",
+    "data_seed": 20261813211,
+    "train_seed": 2026920321,
+    "validation_seed": 20262013211,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.11544623225927353,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9825311614791405,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.017607516866431343,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3706707347345922,
+          "bound_squared": 0.13739679358868243,
+          "cosine_lower_bound": 0.9287643438522593,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9825311614791405,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.017607516866431343,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3706707347345922,
+          "bound_squared": 0.13739679358868243,
+          "cosine_lower_bound": 0.9287643438522593,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9814917661694414,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.018658717883843202,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.37323996056932984,
+          "bound_squared": 0.13930806816579488,
+          "cosine_lower_bound": 0.9277348391831607,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4141652584075928,
+          0.011680577881634235
+        ],
+        "pair_relative_second_singular_value": 0.008259697817265987
+      }
+    },
+    "elapsed_sec": 7.0457860846072435
+  },
+  {
+    "objective_id": "mse",
+    "capacity_id": "d16-k2",
+    "geometry": "axis",
+    "seed": 20261104,
+    "shared_model_id": "mse:d16-k2:axis:20261104",
+    "data_seed": 20261814000,
+    "train_seed": 2026920400,
+    "validation_seed": 20262014000,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.43596136569976807,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9972086123997548,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.003474976862018307,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.33421739378424253,
+          "bound_squared": 0.11170126630793144,
+          "cosine_lower_bound": 0.9424960125603018,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9972086123997548,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.003474976862018307,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.33421739378424253,
+          "bound_squared": 0.11170126630793144,
+          "cosine_lower_bound": 0.9424960125603018,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9971073195868665,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.003688478019553123,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3347976257841773,
+          "bound_squared": 0.11208945023072202,
+          "cosine_lower_bound": 0.9422900560704639,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4140264987945557,
+          0.02299920655786991
+        ],
+        "pair_relative_second_singular_value": 0.01626504585146904
+      }
+    },
+    "elapsed_sec": 6.80428567994386
+  },
+  {
+    "objective_id": "mse",
+    "capacity_id": "d16-k2",
+    "geometry": "dense",
+    "seed": 20261104,
+    "shared_model_id": "mse:d16-k2:dense:20261104",
+    "data_seed": 20261814001,
+    "train_seed": 2026920400,
+    "validation_seed": 20262014001,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.45903778076171875,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 8,
+        "rank": 1,
+        "target_cosine": 0.0012445793008894663,
+        "recovered": false,
+        "certificate": {
+          "empirical_excess": 0.5401292722791742,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 1.0,
+          "bound_squared": 1.0,
+          "cosine_lower_bound": 0.0,
+          "confidence": 0.9996527777777777,
+          "certified": false,
+          "independent_validation": true
+        },
+        "certified": false
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9959174049736798,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.003963955789114164,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.33554480908315537,
+          "bound_squared": 0.11259031890265117,
+          "cosine_lower_bound": 0.9420242465549116,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9966933719500607,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.0035228510455919534,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.33434758901189243,
+          "bound_squared": 0.11178831027806534,
+          "cosine_lower_bound": 0.9424498340611741,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4135218858718872,
+          0.04422876238822937
+        ],
+        "pair_relative_second_singular_value": 0.031289760023355484
+      }
+    },
+    "elapsed_sec": 6.858109422028065
+  },
+  {
+    "objective_id": "mse",
+    "capacity_id": "d32-k4",
+    "geometry": "axis",
+    "seed": 20261104,
+    "shared_model_id": "mse:d32-k4:axis:20261104",
+    "data_seed": 20261814010,
+    "train_seed": 2026920401,
+    "validation_seed": 20262014010,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.1037108302116394,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9807139496051733,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.023317169305875435,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3844190159737381,
+          "bound_squared": 0.14777797984221713,
+          "cosine_lower_bound": 0.923158718833215,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9808746232949181,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.02313459810304595,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3839870208753272,
+          "bound_squared": 0.14744603220070898,
+          "cosine_lower_bound": 0.9233384903702927,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.980809743163078,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.023209236175821407,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3841636861906308,
+          "bound_squared": 0.14758173778757344,
+          "cosine_lower_bound": 0.9232650010763034,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4141913652420044,
+          0.007939524948596954
+        ],
+        "pair_relative_second_singular_value": 0.005614180117845535
+      }
+    },
+    "elapsed_sec": 6.627411796711385
+  },
+  {
+    "objective_id": "mse",
+    "capacity_id": "d32-k4",
+    "geometry": "dense",
+    "seed": 20261104,
+    "shared_model_id": "mse:d32-k4:dense:20261104",
+    "data_seed": 20261814011,
+    "train_seed": 2026920401,
+    "validation_seed": 20262014011,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.11300894618034363,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9570152162890374,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.04665716567420719,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.436135686312812,
+          "bound_squared": 0.1902143368755476,
+          "cosine_lower_bound": 0.8998809160797069,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9570152162890374,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.04665716567420719,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.436135686312812,
+          "bound_squared": 0.1902143368755476,
+          "cosine_lower_bound": 0.8998809160797069,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9556863914332685,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.04806588373077818,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.439062230706479,
+          "bound_squared": 0.19277564243294937,
+          "cosine_lower_bound": 0.898456653137507,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4141489267349243,
+          0.01352784875780344
+        ],
+        "pair_relative_second_singular_value": 0.009566070511937141
+      }
+    },
+    "elapsed_sec": 6.74491036683321
+  },
+  {
+    "objective_id": "mse_l1",
+    "capacity_id": "d16-k2",
+    "geometry": "axis",
+    "seed": 20261104,
+    "shared_model_id": "mse_l1:d16-k2:axis:20261104",
+    "data_seed": 20261814100,
+    "train_seed": 2026920410,
+    "validation_seed": 20262014100,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.3992682695388794,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9857373863450838,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.01313082034021704,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.35952377579125677,
+          "bound_squared": 0.12925734535920186,
+          "cosine_lower_bound": 0.9331359250617234,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9857373863450838,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.01313082034021704,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.35952377579125677,
+          "bound_squared": 0.12925734535920186,
+          "cosine_lower_bound": 0.9331359250617234,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9847355056448286,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.014175468734880379,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.36215563791935035,
+          "bound_squared": 0.13115670607677157,
+          "cosine_lower_bound": 0.9321176395301338,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4141206741333008,
+          0.01621374301612377
+        ],
+        "pair_relative_second_singular_value": 0.011465600691735744
+      }
+    },
+    "elapsed_sec": 7.656417267397046
+  },
+  {
+    "objective_id": "mse_l1",
+    "capacity_id": "d16-k2",
+    "geometry": "dense",
+    "seed": 20261104,
+    "shared_model_id": "mse_l1:d16-k2:dense:20261104",
+    "data_seed": 20261814101,
+    "train_seed": 2026920410,
+    "validation_seed": 20262014101,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.4017839729785919,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9857188637622651,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.016393936849826353,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3676823145972382,
+          "bound_squared": 0.13519028446758244,
+          "cosine_lower_bound": 0.9299514586968599,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9857188637622651,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.016393936849826353,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3676823145972382,
+          "bound_squared": 0.13519028446758244,
+          "cosine_lower_bound": 0.9299514586968599,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9855473220688972,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.01660219280850793,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3681968653657786,
+          "bound_squared": 0.1355689316651853,
+          "cosine_lower_bound": 0.9297478520194681,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4138176441192627,
+          0.033463042229413986
+        ],
+        "pair_relative_second_singular_value": 0.023668570443987846
+      }
+    },
+    "elapsed_sec": 7.5586869502440095
+  },
+  {
+    "objective_id": "mse_l1",
+    "capacity_id": "d32-k4",
+    "geometry": "axis",
+    "seed": 20261104,
+    "shared_model_id": "mse_l1:d32-k4:axis:20261104",
+    "data_seed": 20261814110,
+    "train_seed": 2026920411,
+    "validation_seed": 20262014110,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.11208184063434601,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9758324820461504,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.02763643581167931,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.39450119349749935,
+          "bound_squared": 0.15563119167095144,
+          "cosine_lower_bound": 0.9188954283970775,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.976358803508758,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.026997052474927515,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.39302503293457136,
+          "bound_squared": 0.1544686765132209,
+          "cosine_lower_bound": 0.9195277720040755,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9761183347684916,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.027292159437932027,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3937070416283846,
+          "bound_squared": 0.15500523462777455,
+          "cosine_lower_bound": 0.9192359682759511,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4141807556152344,
+          0.009643008932471275
+        ],
+        "pair_relative_second_singular_value": 0.00681879511103034
+      }
+    },
+    "elapsed_sec": 8.061619000509381
+  },
+  {
+    "objective_id": "mse_l1",
+    "capacity_id": "d32-k4",
+    "geometry": "dense",
+    "seed": 20261104,
+    "shared_model_id": "mse_l1:d32-k4:dense:20261104",
+    "data_seed": 20261814111,
+    "train_seed": 2026920411,
+    "validation_seed": 20262014111,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.10453445464372635,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9589332066783968,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.04290961001521924,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4282529618271791,
+          "bound_squared": 0.18340059931375133,
+          "cosine_lower_bound": 0.9036588962026815,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9622497143771706,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.039562527017521734,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4210878695277177,
+          "bound_squared": 0.1773149938633922,
+          "cosine_lower_bound": 0.9070198488107125,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9606302683882759,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.04119653135239412,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4246008841675762,
+          "bound_squared": 0.18028591083588746,
+          "cosine_lower_bound": 0.9053806322006853,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.414156436920166,
+          0.01271179597824812
+        ],
+        "pair_relative_second_singular_value": 0.008988960646092892
+      }
+    },
+    "elapsed_sec": 7.588105552829802
+  },
+  {
+    "objective_id": "mse_l2",
+    "capacity_id": "d16-k2",
+    "geometry": "axis",
+    "seed": 20261104,
+    "shared_model_id": "mse_l2:d16-k2:axis:20261104",
+    "data_seed": 20261814200,
+    "train_seed": 2026920420,
+    "validation_seed": 20262014200,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.397016316652298,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9902401403271468,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.011387769074539008,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.35508894834926535,
+          "bound_squared": 0.12608816123978725,
+          "cosine_lower_bound": 0.934832519096449,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9902401403271468,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.011387769074539008,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.35508894834926535,
+          "bound_squared": 0.12608816123978725,
+          "cosine_lower_bound": 0.934832519096449,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 2,
+        "target_cosine": 0.9928634721017805,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.012686123856667083,
+          "tolerance": 0.08185765276650904,
+          "angle_sin_bound": 0.41460556638629686,
+          "bound_squared": 0.171897775678502,
+          "cosine_lower_bound": 0.9100012221538485,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4081274271011353,
+          0.1310618817806244
+        ],
+        "pair_relative_second_singular_value": 0.09307529777288437
+      }
+    },
+    "elapsed_sec": 8.145871197804809
+  },
+  {
+    "objective_id": "mse_l2",
+    "capacity_id": "d16-k2",
+    "geometry": "dense",
+    "seed": 20261104,
+    "shared_model_id": "mse_l2:d16-k2:dense:20261104",
+    "data_seed": 20261814201,
+    "train_seed": 2026920420,
+    "validation_seed": 20262014201,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.4119192361831665,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9721312442809759,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.03240767071639163,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4053469677017133,
+          "bound_squared": 0.16430616422497382,
+          "cosine_lower_bound": 0.9141629153356782,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9775473701117781,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.022725254632085093,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3830166724105055,
+          "bound_squared": 0.1467017713444165,
+          "cosine_lower_bound": 0.9237414295437785,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 2,
+        "target_cosine": 0.9814472414196779,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.02322893698489853,
+          "tolerance": 0.08185765276650904,
+          "angle_sin_bound": 0.4371115725083712,
+          "bound_squared": 0.19106652682074102,
+          "cosine_lower_bound": 0.8994072899300177,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4051086902618408,
+          0.1602172553539276
+        ],
+        "pair_relative_second_singular_value": 0.1140248104929924
+      }
+    },
+    "elapsed_sec": 8.348627862520516
+  },
+  {
+    "objective_id": "mse_l2",
+    "capacity_id": "d32-k4",
+    "geometry": "axis",
+    "seed": 20261104,
+    "shared_model_id": "mse_l2:d32-k4:axis:20261104",
+    "data_seed": 20261814210,
+    "train_seed": 2026920421,
+    "validation_seed": 20262014210,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.10597807168960571,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9572660348337585,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.04935835186045011,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4417302168596782,
+          "bound_squared": 0.19512558448689835,
+          "cosine_lower_bound": 0.8971479340181873,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 1,
+        "rank": 1,
+        "target_cosine": 0.9572660372547945,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.049358349253555624,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.4417302114946296,
+          "bound_squared": 0.1951255797470902,
+          "cosine_lower_bound": 0.8971479366597851,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9562671544441987,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.05043118239484282,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.44393263617188755,
+          "bound_squared": 0.19707618545852149,
+          "cosine_lower_bound": 0.8960601623448498,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4140777587890625,
+          0.01959957927465439
+        ],
+        "pair_relative_second_singular_value": 0.013860326260328293
+      }
+    },
+    "elapsed_sec": 9.641540278680623
+  },
+  {
+    "objective_id": "mse_l2",
+    "capacity_id": "d32-k4",
+    "geometry": "dense",
+    "seed": 20261104,
+    "shared_model_id": "mse_l2:d32-k4:dense:20261104",
+    "data_seed": 20261814211,
+    "train_seed": 2026920421,
+    "validation_seed": 20262014211,
+    "training_variant": "spectral-warm-start",
+    "objective_loss": 0.1076217070221901,
+    "projection_hits": 0,
+    "readout_selection_is_training_only": true,
+    "validation_selected": false,
+    "target_used_for_training": false,
+    "readouts": {
+      "usage-atom": {
+        "kind": "atom",
+        "selection": "training_split_activation_usage_only",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9946658678541267,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.004979528230833134,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3382851079359408,
+          "bound_squared": 0.11443681425123112,
+          "cosine_lower_bound": 0.9410436683537958,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "spectral-linked-atom": {
+        "kind": "atom",
+        "selection": "maximum_decoder_cosine_to_training_spectral_anchor",
+        "selected_atom": 0,
+        "rank": 1,
+        "target_cosine": 0.9946658678541267,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.004979528230833134,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3382851079359408,
+          "bound_squared": 0.11443681425123112,
+          "cosine_lower_bound": 0.9410436683537958,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true
+      },
+      "signed-pair-span": {
+        "kind": "subspace",
+        "selection": "fixed_training_spectral_warm_start_pair_slots",
+        "selected_atom": null,
+        "rank": 1,
+        "target_cosine": 0.9944378241109542,
+        "recovered": true,
+        "certificate": {
+          "empirical_excess": 0.0052211568874469495,
+          "tolerance": 0.05796071960734399,
+          "angle_sin_bound": 0.3389338269949432,
+          "bound_squared": 0.11487613908143807,
+          "cosine_lower_bound": 0.940810215143608,
+          "confidence": 0.9996527777777777,
+          "certified": true,
+          "independent_validation": true
+        },
+        "certified": true,
+        "pair_singular_values": [
+          1.4141714572906494,
+          0.010912124998867512
+        ],
+        "pair_relative_second_singular_value": 0.007716267369687557
+      }
+    },
+    "elapsed_sec": 8.607117831707
+  }
+]

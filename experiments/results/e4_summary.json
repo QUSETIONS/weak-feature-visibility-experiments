@@ -1,0 +1,13 @@
+{
+  "elapsed_sec": 302.1519684791565,
+  "threshold": 0.8,
+  "recovery_by_class": {
+    "label_only": 0.05555555555555555,
+    "cov_not_ind": 1.0,
+    "visible": 1.0
+  },
+  "recovery_axis_lam035": 0.0,
+  "cos_axis_lam035": 0.5844532251358032,
+  "recovery_dense_lam035": 0.3333333333333333,
+  "cos_dense_lam035": 0.6237242585824182
+}

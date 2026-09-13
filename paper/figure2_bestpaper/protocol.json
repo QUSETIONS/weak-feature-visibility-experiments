@@ -1,0 +1,63 @@
+{
+  "figure_id": "figure2_detector_decoder_decoupling",
+  "evidence_status": {
+    "panels_a_b": "pre-specified E4-v2 endpoint",
+    "panel_c": "cross-strength paired visualization",
+    "panel_d": "paired descriptive audit"
+  },
+  "data_generation": {
+    "dimension_m": 8,
+    "feature_distribution": "centered Bernoulli",
+    "bernoulli_p": 0.05,
+    "geometries": ["axis", "dense"],
+    "lambda_eff_values": [0.35, 0.55, 0.8],
+    "primary_lambda_eff": 0.55,
+    "seeds": [20260824, 20260825, 20260826, 20260827, 20260828, 20260829, 20260830, 20260831]
+  },
+  "detector": {
+    "samples_per_trial": 4096,
+    "alternative_trials": 400,
+    "null_trials": 800,
+    "alpha": 0.05,
+    "statistics": ["label", "covariance", "feature-independent covariance"]
+  },
+  "topk_sae": {
+    "dictionary_size": 16,
+    "top_k": 2,
+    "training_samples": 20000,
+    "optimization_steps": 4000,
+    "batch_size": 512,
+    "learning_rate": 0.001,
+    "recovery_metric": "maximum absolute decoder-target cosine",
+    "recovery_threshold": 0.8
+  },
+  "bootstrap": {
+    "unit": "seed",
+    "method": "nonparametric percentile bootstrap of the seed-level mean",
+    "resamples": 1000,
+    "confidence_level": 0.95,
+    "quantiles": [0.025, 0.975],
+    "numpy_generator": "numpy.random.default_rng",
+    "random_seed": 0,
+    "reproduction_order": [
+      "axis/ind",
+      "axis/cov",
+      "axis/label",
+      "axis/sae_recovery",
+      "axis/sae_cosine",
+      "dense/ind",
+      "dense/cov",
+      "dense/label",
+      "dense/sae_recovery",
+      "dense/sae_cosine"
+    ]
+  },
+  "integrity": {
+    "expected_raw_rows": 48,
+    "expected_paired_rows": 24,
+    "missing_pair_policy": "fail",
+    "exclusion_policy": "no exclusions",
+    "smoothing": "none",
+    "interpolation": "none"
+  }
+}

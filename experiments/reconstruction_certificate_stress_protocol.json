@@ -1,0 +1,48 @@
+{
+  "experiment_id": "reconstruction-certificate-objective-stress-v3",
+  "status": "frozen-before-execution",
+  "purpose": "Test whether one held-out reconstruction certificate transfers across objective styles and two overcomplete TopK capacities.",
+  "feature": {
+    "m": 8,
+    "signal_strength": 0.55,
+    "distribution": "rank-one Gaussian signal plus isotropic Gaussian noise"
+  },
+  "geometry": ["axis", "dense"],
+  "objectives": [
+    {"id": "mse", "code_penalty": 0.0, "code_penalty_type": "none"},
+    {"id": "mse_l1", "code_penalty": 0.001, "code_penalty_type": "l1"},
+    {"id": "mse_l2", "code_penalty": 0.001, "code_penalty_type": "l2"}
+  ],
+  "capacities": [
+    {"id": "d16-k2", "dict_size": 16, "k": 2},
+    {"id": "d32-k4", "dict_size": 32, "k": 4}
+  ],
+  "seeds": {
+    "base": 20261101,
+    "count": 4,
+    "training_rng_offset": 710000,
+    "torch_seed_offset": 810000,
+    "validation_rng_offset": 910000
+  },
+  "training": {
+    "N_train": 20000,
+    "N_validation": 100000,
+    "steps": 4000,
+    "batch": 512,
+    "lr": 0.001,
+    "decoder_columns_unit_norm": true,
+    "candidate_selection": "training_split_activation_usage_only",
+    "candidate_selection_tie_break": "lowest_atom_index",
+    "validation_is_never_used_for_selection": true
+  },
+  "certificate": {
+    "delta": 0.05,
+    "cosine_threshold": 0.80,
+    "rank": 1,
+    "risk_reference": "target-containing rank-matched oracle projection",
+    "projector_difference_rank_factor": 2,
+    "gate": "certificate cosine lower bound >= cosine threshold"
+  },
+  "expected_rows": 48,
+  "evidence_status": "eligible_only_if_complete_and_all_protocol_gates_pass"
+}

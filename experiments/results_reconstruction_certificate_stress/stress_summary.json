@@ -1,0 +1,12 @@
+{
+  "experiment_id": "reconstruction-certificate-objective-stress-v3",
+  "status": "completed",
+  "rows": 48,
+  "expected_rows": 48,
+  "certificate_pass_rate": 0.3958333333333333,
+  "recovery_rate": 0.4791666666666667,
+  "all_certificate_pass": false,
+  "evidence_eligible": false,
+  "completed_at_utc": "2026-09-01T04:07:41.118837+00:00",
+  "protocol_path": "reconstruction_certificate_stress_protocol.json"
+}

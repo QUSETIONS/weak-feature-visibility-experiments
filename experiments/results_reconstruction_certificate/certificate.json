@@ -1,0 +1,88 @@
+{
+  "claim_tested": "For an isotropic-noise signal model, any decoder subspace whose held-out reconstruction excess risk is certified has an objective-independent target-alignment bound.",
+  "status": "certified_under_assumptions",
+  "assumptions": [
+    "held-out risk excess is valid for the same-rank decoder projection",
+    "signal covariance is rank one with positive strength",
+    "noise is isotropic and independent of the target direction"
+  ],
+  "synthetic_validation_demo": true,
+  "evidence_eligible": false,
+  "multi_objective_training": false,
+  "analytic_identity_included": true,
+  "held_out_validation_included": true,
+  "validation_split": {
+    "independent": true,
+    "sample_count": 100000,
+    "seed": 20260831,
+    "candidate_frozen_before_validation": true
+  },
+  "cases": {
+    "axis": {
+      "case": {
+        "target_cosine": 0.95,
+        "signal_strength": 1.0,
+        "risk_excess": 0.09750000000000003,
+        "noise_variance": 1.0,
+        "dimension": 8,
+        "decoder_rank": 1,
+        "detector_C_ind": 0.0,
+        "objective": "frozen candidate A"
+      },
+      "analytic_certificate": {
+        "target_cosine": 0.95,
+        "observed_sin": 0.31224989991991997,
+        "angle_sin_bound": 0.31224989991991997,
+        "bound_squared": 0.09750000000000003,
+        "informative": true,
+        "certified": true
+      },
+      "held_out_certificate": {
+        "empirical_excess": 0.09791067049825845,
+        "tolerance": 0.04873647213082897,
+        "angle_sin_bound": 0.38294535201394914,
+        "bound_squared": 0.14664714262908743,
+        "cosine_lower_bound": 0.9237709983382855,
+        "confidence": 0.95,
+        "certified": true,
+        "independent_validation": true,
+        "observed_target_cosine_for_audit_only": 0.95,
+        "validation_seed": 20260831,
+        "candidate_frozen_before_validation": true
+      }
+    },
+    "dense": {
+      "case": {
+        "target_cosine": 0.9,
+        "signal_strength": 1.0,
+        "risk_excess": 0.18999999999999995,
+        "noise_variance": 1.0,
+        "dimension": 8,
+        "decoder_rank": 1,
+        "detector_C_ind": 0.875,
+        "objective": "frozen candidate B"
+      },
+      "analytic_certificate": {
+        "target_cosine": 0.9,
+        "observed_sin": 0.4358898943540673,
+        "angle_sin_bound": 0.4358898943540673,
+        "bound_squared": 0.18999999999999995,
+        "informative": true,
+        "certified": true
+      },
+      "held_out_certificate": {
+        "empirical_excess": 0.19250500167673093,
+        "tolerance": 0.04873647213082897,
+        "angle_sin_bound": 0.4911633880976471,
+        "bound_squared": 0.2412414738075599,
+        "cosine_lower_bound": 0.8710674636286446,
+        "confidence": 0.95,
+        "certified": true,
+        "independent_validation": true,
+        "observed_target_cosine_for_audit_only": 0.8999999999999997,
+        "validation_seed": 20260831,
+        "candidate_frozen_before_validation": true
+      }
+    }
+  }
+}

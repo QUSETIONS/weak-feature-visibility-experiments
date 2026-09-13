@@ -1,0 +1,11 @@
+geometry,metric,lambda_eff,n_seeds,mean,ci95_low,ci95_high,bootstrap_resamples,bootstrap_seed,bootstrap_unit,interval
+axis,ind,0.55,8,0.08125,0.0728125,0.09,1000,0,seed,percentile_2.5_97.5
+axis,cov,0.55,8,1.0,1.0,1.0,1000,0,seed,percentile_2.5_97.5
+axis,label,0.55,8,1.0,1.0,1.0,1000,0,seed,percentile_2.5_97.5
+axis,sae_recovery,0.55,8,1.0,1.0,1.0,1000,0,seed,percentile_2.5_97.5
+axis,sae_cosine,0.55,8,0.9700491055846214,0.9525570517405868,0.9838219702243804,1000,0,seed,percentile_2.5_97.5
+dense,ind,0.55,8,1.0,1.0,1.0,1000,0,seed,percentile_2.5_97.5
+dense,cov,0.55,8,1.0,1.0,1.0,1000,0,seed,percentile_2.5_97.5
+dense,label,0.55,8,1.0,1.0,1.0,1000,0,seed,percentile_2.5_97.5
+dense,sae_recovery,0.55,8,1.0,1.0,1.0,1000,0,seed,percentile_2.5_97.5
+dense,sae_cosine,0.55,8,0.9781728524652622,0.968464383121832,0.9868311363213917,1000,0,seed,percentile_2.5_97.5

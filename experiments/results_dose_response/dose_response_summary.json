@@ -1,0 +1,193 @@
+{
+  "experiment_id": "spectral-anchor-sae-v5-dose-response",
+  "status": "completed",
+  "rows": 72,
+  "expected_rows": 72,
+  "groups": 8,
+  "expected_groups": 8,
+  "complete": true,
+  "all_configs_have_group_rows": true,
+  "config_summary": {
+    "frozen-exact": {
+      "mode": "frozen",
+      "rows": 8,
+      "groups": 8,
+      "recovery_rate": 1.0,
+      "minimum_anchor_cosine": 0.9982629426712009,
+      "mean_anchor_cosine": 0.9992421296322017,
+      "maximum_anchor_drift_radians": 0.0,
+      "maximum_residual_anchor_dot": 5.21540641784668e-08,
+      "mean_anchor_projection_hit_fraction": 0.0,
+      "mean_residual_projection_hit_fraction": 1.0
+    },
+    "frozen-leak-010": {
+      "mode": "frozen",
+      "rows": 8,
+      "groups": 8,
+      "recovery_rate": 1.0,
+      "minimum_anchor_cosine": 0.9982629426712009,
+      "mean_anchor_cosine": 0.9992421296322017,
+      "maximum_anchor_drift_radians": 0.0,
+      "maximum_residual_anchor_dot": 0.10000008344650269,
+      "mean_anchor_projection_hit_fraction": 0.0,
+      "mean_residual_projection_hit_fraction": 0.38965625000000004
+    },
+    "hard-rho-005-eta-010": {
+      "mode": "hard",
+      "rows": 8,
+      "groups": 8,
+      "recovery_rate": 1.0,
+      "minimum_anchor_cosine": 0.996377170085907,
+      "mean_anchor_cosine": 0.9980984471066301,
+      "maximum_anchor_drift_radians": 0.05000101214377506,
+      "maximum_residual_anchor_dot": 0.09859585016965866,
+      "mean_anchor_projection_hit_fraction": 0.6445624999999999,
+      "mean_residual_projection_hit_fraction": 0.17221875
+    },
+    "hard-rho-010-eta-010": {
+      "mode": "hard",
+      "rows": 8,
+      "groups": 8,
+      "recovery_rate": 1.0,
+      "minimum_anchor_cosine": 0.9909694194793701,
+      "mean_anchor_cosine": 0.9954760725387704,
+      "maximum_anchor_drift_radians": 0.0999998816479746,
+      "maximum_residual_anchor_dot": 0.09908191859722137,
+      "mean_anchor_projection_hit_fraction": 0.28690625000000003,
+      "mean_residual_projection_hit_fraction": 0.22703125000000002
+    },
+    "hard-rho-020-eta-000": {
+      "mode": "hard",
+      "rows": 8,
+      "groups": 8,
+      "recovery_rate": 1.0,
+      "minimum_anchor_cosine": 0.9788143634796143,
+      "mean_anchor_cosine": 0.9930561187913585,
+      "maximum_anchor_drift_radians": 0.17593038267586855,
+      "maximum_residual_anchor_dot": 6.705522537231445e-08,
+      "mean_anchor_projection_hit_fraction": 0.138125,
+      "mean_residual_projection_hit_fraction": 1.0
+    },
+    "hard-rho-020-eta-010": {
+      "mode": "hard",
+      "rows": 8,
+      "groups": 8,
+      "recovery_rate": 1.0,
+      "minimum_anchor_cosine": 0.9856215715408325,
+      "mean_anchor_cosine": 0.994178977594392,
+      "maximum_anchor_drift_radians": 0.13998020278903506,
+      "maximum_residual_anchor_dot": 0.09999998658895493,
+      "mean_anchor_projection_hit_fraction": 0.12809375,
+      "mean_residual_projection_hit_fraction": 0.28278125
+    },
+    "hard-rho-040-eta-010": {
+      "mode": "hard",
+      "rows": 8,
+      "groups": 8,
+      "recovery_rate": 1.0,
+      "minimum_anchor_cosine": 0.9810376167297363,
+      "mean_anchor_cosine": 0.9931312858823134,
+      "maximum_anchor_drift_radians": 0.16562220583910459,
+      "maximum_residual_anchor_dot": 0.10000002384185791,
+      "mean_anchor_projection_hit_fraction": 0.0,
+      "mean_residual_projection_hit_fraction": 0.29000000000000004
+    },
+    "soft-rho-020-eta-010": {
+      "mode": "soft",
+      "rows": 8,
+      "groups": 8,
+      "recovery_rate": 1.0,
+      "minimum_anchor_cosine": 0.9872323274612427,
+      "mean_anchor_cosine": 0.9930107568204897,
+      "maximum_anchor_drift_radians": 0.16082335563115752,
+      "maximum_residual_anchor_dot": 0.1012488380074501,
+      "mean_anchor_projection_hit_fraction": 0.0,
+      "mean_residual_projection_hit_fraction": 0.0
+    },
+    "unbounded": {
+      "mode": "unbounded",
+      "rows": 8,
+      "groups": 8,
+      "recovery_rate": 1.0,
+      "minimum_anchor_cosine": 0.9900763282797328,
+      "mean_anchor_cosine": 0.9940268009749822,
+      "maximum_anchor_drift_radians": 0.11652893101358586,
+      "maximum_residual_anchor_dot": 0.7339847087860107,
+      "mean_anchor_projection_hit_fraction": 0.0,
+      "mean_residual_projection_hit_fraction": 0.0
+    }
+  },
+  "group_summary": [
+    {
+      "anchor_group": "axis:20261201",
+      "reference_cosine": 0.9996561826975288,
+      "configs": 9,
+      "minimum_final_cosine": 0.9923534989356995,
+      "maximum_drift_radians": 0.10704264470268672,
+      "recovered_configs": 9
+    },
+    {
+      "anchor_group": "axis:20261202",
+      "reference_cosine": 0.999378858109747,
+      "configs": 9,
+      "minimum_final_cosine": 0.9904887080192566,
+      "maximum_drift_radians": 0.12395225663903778,
+      "recovered_configs": 9
+    },
+    {
+      "anchor_group": "axis:20261203",
+      "reference_cosine": 0.9995276376243128,
+      "configs": 9,
+      "minimum_final_cosine": 0.9872323274612427,
+      "maximum_drift_radians": 0.16082335563115752,
+      "recovered_configs": 9
+    },
+    {
+      "anchor_group": "axis:20261204",
+      "reference_cosine": 0.9992221862256174,
+      "configs": 9,
+      "minimum_final_cosine": 0.9788143634796143,
+      "maximum_drift_radians": 0.17593038267586855,
+      "recovered_configs": 9
+    },
+    {
+      "anchor_group": "dense:20261201",
+      "reference_cosine": 0.9982629434109753,
+      "configs": 9,
+      "minimum_final_cosine": 0.9937124422678888,
+      "maximum_drift_radians": 0.11419981184305347,
+      "recovered_configs": 9
+    },
+    {
+      "anchor_group": "dense:20261202",
+      "reference_cosine": 0.9992580427874416,
+      "configs": 9,
+      "minimum_final_cosine": 0.988343608117177,
+      "maximum_drift_radians": 0.1316712663234127,
+      "recovered_configs": 9
+    },
+    {
+      "anchor_group": "dense:20261203",
+      "reference_cosine": 0.9992485815906346,
+      "configs": 9,
+      "minimum_final_cosine": 0.9900763282797328,
+      "maximum_drift_radians": 0.11652893101358586,
+      "recovered_configs": 9
+    },
+    {
+      "anchor_group": "dense:20261204",
+      "reference_cosine": 0.9993825738083519,
+      "configs": 9,
+      "minimum_final_cosine": 0.9939893365258933,
+      "maximum_drift_radians": 0.12747436874990697,
+      "recovered_configs": 9
+    }
+  ],
+  "spectral_sine_bound": 0.339688766605927,
+  "spectral_cosine_lower_bound": 0.940537900268641,
+  "covariance_error_bound": 0.13945688453191013,
+  "evidence_eligible": false,
+  "evidence_scope": "anchor_group_ablation_only",
+  "completed_at_utc": "2026-09-04T15:50:38.712680+00:00",
+  "protocol_path": "EXTERNAL_RUN_PATH/iclr_v5/experiments/dose_response_spectral_anchor_protocol.json"
+}

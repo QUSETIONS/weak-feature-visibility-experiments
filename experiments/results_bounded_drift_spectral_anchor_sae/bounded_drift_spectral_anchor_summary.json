@@ -1,0 +1,15 @@
+{
+  "experiment_id": "spectral-anchor-sae-v4-bounded-drift",
+  "status": "completed",
+  "rows": 48,
+  "expected_rows": 48,
+  "anchor_recovery_rate": 1.0,
+  "minimum_anchor_cosine": 0.9898908399994362,
+  "maximum_anchor_drift_radians": 0.12865744531154633,
+  "maximum_residual_anchor_dot": 0.10000000149011612,
+  "anchor_cosine_lower_bound": 0.8543040213060747,
+  "covariance_error_bound": 0.13945688453191013,
+  "evidence_eligible": true,
+  "completed_at_utc": "2026-09-02T07:02:38.475977+00:00",
+  "protocol_path": "EXTERNAL_RUN_PATH/bounded_drift_spectral_anchor_v4/bounded_drift_spectral_anchor_sae_protocol.json"
+}

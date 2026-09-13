@@ -1,0 +1,41 @@
+{
+  "experiment_id": "E4-topk-d32k4-budget-followup",
+  "status": "posthoc-frozen-before-execution",
+  "parent_experiment": "E4-topk-heldout-confirmation",
+  "purpose": "Diagnose whether the d32-k4 held-out failure at 4000 steps is consistent with a training-budget limitation. This is post-hoc and does not alter the original confirmation gate.",
+  "geometry": ["axis", "dense"],
+  "feature": {
+    "m": 8,
+    "p": 0.05,
+    "lambda_eff": 0.55
+  },
+  "topk": {
+    "id": "d32-k4",
+    "dict_size": 32,
+    "k": 4
+  },
+  "training": {
+    "N_train": 20000,
+    "batch": 512,
+    "lr": 0.001,
+    "cosine_threshold": 0.8
+  },
+  "steps": [4000, 8000, 16000],
+  "seeds": {
+    "base": 20260901,
+    "count": 8,
+    "training_rng_offset": 100000,
+    "torch_seed_offset": 200000
+  },
+  "analysis": {
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260910
+  },
+  "gates": {
+    "minimum_recovery_rate_at_16000": 0.75,
+    "max_absolute_recovery_gap_at_16000": 0.25,
+    "minimum_dense_recovery_gain": 0.125,
+    "max_axis_cosine_penalty_at_16000": 0.05
+  },
+  "reporting_boundary": "Post-hoc budget diagnostic. Passing this diagnostic is evidence about this d32-k4 training budget only; it neither retroactively validates the failed held-out composite gate nor establishes objective- or width-invariant recovery."
+}

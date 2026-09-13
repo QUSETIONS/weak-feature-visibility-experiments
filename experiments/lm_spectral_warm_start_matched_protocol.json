@@ -1,0 +1,101 @@
+{
+  "experiment_id": "lm-residual-spectral-warm-start-v1-matched",
+  "status": "frozen-before-execution",
+  "frozen_at": "2026-09-10",
+  "purpose": "Matched-compute validation of training-only spectral signed-pair initialization on real language-model residual backgrounds.",
+  "models": [
+    {
+      "id": "gpt2-small-l6",
+      "hf_id": "gpt2",
+      "layer": 6,
+      "expected_hidden_size": 768
+    },
+    {
+      "id": "pythia-70m-l3",
+      "hf_id": "EleutherAI/pythia-70m",
+      "layer": 3,
+      "expected_hidden_size": 512
+    }
+  ],
+  "corpus": {
+    "dataset_candidates": [
+      ["Salesforce/wikitext", "wikitext-2-raw-v1"],
+      ["wikitext", "wikitext-2-raw-v1"]
+    ],
+    "split": "train",
+    "minimum_nonempty_documents": 200,
+    "synthetic_fallback_forbidden": true,
+    "sequence_shuffle_seed": 20260910
+  },
+  "residuals": {
+    "sequence_length": 128,
+    "train_sequences": 4000,
+    "validation_sequences": 1500,
+    "extraction_batch": 16,
+    "whitening_fit": "training_split_only_full_hidden_covariance",
+    "sae_dimensions": 32
+  },
+  "feature": {
+    "prevalence": 0.05,
+    "strengths": [0.35, 0.55],
+    "amplitude_formula": "lambda_eff/sqrt(prevalence)",
+    "directions": ["pc1", "pc32", "dense"],
+    "injection": "centered_Bernoulli_in_train_whitened_frame"
+  },
+  "sae": {
+    "objective": {"id": "mse", "code_penalty": 0.0, "code_penalty_type": "none"},
+    "dict_size": 64,
+    "k": 4,
+    "N_train": 24000,
+    "N_validation": 24000,
+    "steps": 3000,
+    "batch": 512,
+    "lr": 0.001,
+    "decoder_columns_unit_norm": true,
+    "post_initialization_constraints": "none"
+  },
+  "variants": [
+    {"id": "vanilla-random", "initialization": "random_decoder_encoder"},
+    {"id": "spectral-warm-start", "initialization": "training_spectral_signed_pair", "anchor_pair_slots": [0, 1]}
+  ],
+  "seeds": {
+    "base": 20270101,
+    "count": 8,
+    "data_rng_offset": 2100000,
+    "torch_rng_offset": 2200000,
+    "validation_rng_offset": 2300000
+  },
+  "evaluation": {
+    "primary_recovery_readout": "oracle_best_decoder_atom_for_evaluation_only",
+    "secondary_target_free_readout": "decoder_atom_nearest_training_spectral_anchor",
+    "cosine_threshold": 0.80,
+    "held_out_metrics": ["reconstruction_mse", "active_l0", "dead_atom_fraction"],
+    "gaussian_certificate_forbidden": true,
+    "reason_no_gaussian_certificate": "Whitened transformer residuals are empirical non-Gaussian backgrounds, so the rank-one Gaussian certificate assumptions are not asserted."
+  },
+  "comparison": {
+    "paired_conditions": "same residual cache, sampled indices, Bernoulli labels, train seed, validation samples, and compute per pair",
+    "only_variant_difference": "initialization",
+    "expected_pairs_per_model": 48,
+    "expected_rows_per_model": 96,
+    "expected_pairs_total": 96,
+    "expected_rows_total": 192
+  },
+  "analysis": {
+    "primary_unit": "model_by_base_seed_cluster",
+    "condition_rows_are_not_treated_as_independent_replicates": true,
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260910,
+    "report_model_specific_results": true,
+    "report_pooled_result_as_descriptive_only": true
+  },
+  "data_quality_gates": {
+    "real_corpus_required": true,
+    "disjoint_sequence_indices_required": true,
+    "model_hidden_size_must_match": true,
+    "complete_pairs_required": true,
+    "finite_metrics_required": true
+  },
+  "evidence_status": "eligible_only_if_both_models_complete_all_pairs_and_all_data_quality_gates_pass",
+  "reporting_boundary": "This experiment tests known injected directions on two empirical residual backgrounds. It does not establish unknown-direction semantic discovery, a Gaussian held-out certificate, or a universal result over models, layers, objectives, and SAE scales."
+}

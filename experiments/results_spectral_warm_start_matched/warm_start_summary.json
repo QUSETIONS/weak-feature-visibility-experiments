@@ -1,0 +1,380 @@
+{
+  "experiment_id": "spectral-anchor-sae-v6-matched-warm-start",
+  "status": "completed",
+  "rows": 96,
+  "expected_rows": 96,
+  "pairs": 48,
+  "expected_pairs": 48,
+  "complete": true,
+  "pair_integrity": true,
+  "variant_summary": {
+    "vanilla-random": {
+      "initialization": "random_decoder_encoder",
+      "rows": 48,
+      "pairs": 48,
+      "recovery_rate": 0.4791666666666667,
+      "certificate_pass_rate": 0.3958333333333333,
+      "mean_target_cosine": 0.7245306604128713,
+      "minimum_target_cosine": 0.02451794360935639,
+      "mean_initial_anchor_cosine": 0.7270743176341057,
+      "mean_final_candidate_cosine_to_training_spectral": 0.7242550092319702,
+      "mean_objective_loss": 0.26798237254843116,
+      "projection_hits": 0
+    },
+    "spectral-warm-start": {
+      "initialization": "training_spectral_signed_pair",
+      "rows": 48,
+      "pairs": 48,
+      "recovery_rate": 0.9166666666666666,
+      "certificate_pass_rate": 0.9166666666666666,
+      "mean_target_cosine": 0.9237056673201569,
+      "minimum_target_cosine": 0.001244579314369453,
+      "mean_initial_anchor_cosine": 0.9999999975164732,
+      "mean_final_candidate_cosine_to_training_spectral": 0.9248783485983433,
+      "mean_objective_loss": 0.26349023869261146,
+      "projection_hits": 0
+    }
+  },
+  "paired_deltas": [
+    {
+      "pair_id": "mse:d16-k2:axis:20261101",
+      "delta_target_cosine_warm_minus_vanilla": 0.04582470655441284,
+      "delta_objective_loss_warm_minus_vanilla": -0.022661447525024414,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:axis:20261102",
+      "delta_target_cosine_warm_minus_vanilla": 0.22308629751205444,
+      "delta_objective_loss_warm_minus_vanilla": -0.006290942430496216,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:axis:20261103",
+      "delta_target_cosine_warm_minus_vanilla": 0.016320228576660156,
+      "delta_objective_loss_warm_minus_vanilla": 0.022925496101379395,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:axis:20261104",
+      "delta_target_cosine_warm_minus_vanilla": 0.6163021624088287,
+      "delta_objective_loss_warm_minus_vanilla": 0.019999980926513672,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:dense:20261101",
+      "delta_target_cosine_warm_minus_vanilla": 0.008649734499618145,
+      "delta_objective_loss_warm_minus_vanilla": 0.0015266239643096924,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:dense:20261102",
+      "delta_target_cosine_warm_minus_vanilla": 0.9469105589619358,
+      "delta_objective_loss_warm_minus_vanilla": -0.02964136004447937,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:dense:20261103",
+      "delta_target_cosine_warm_minus_vanilla": 0.020773923481572476,
+      "delta_objective_loss_warm_minus_vanilla": -0.017743051052093506,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:dense:20261104",
+      "delta_target_cosine_warm_minus_vanilla": -0.9915746447930278,
+      "delta_objective_loss_warm_minus_vanilla": -0.005155593156814575,
+      "vanilla_recovered": true,
+      "warm_recovered": false
+    },
+    {
+      "pair_id": "mse:d32-k4:axis:20261101",
+      "delta_target_cosine_warm_minus_vanilla": 0.043688297271728516,
+      "delta_objective_loss_warm_minus_vanilla": 0.004169672727584839,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:axis:20261102",
+      "delta_target_cosine_warm_minus_vanilla": 0.372994065284729,
+      "delta_objective_loss_warm_minus_vanilla": 0.012252643704414368,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:axis:20261103",
+      "delta_target_cosine_warm_minus_vanilla": 0.233056902885437,
+      "delta_objective_loss_warm_minus_vanilla": -0.0030388161540031433,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:axis:20261104",
+      "delta_target_cosine_warm_minus_vanilla": 0.38716942071914673,
+      "delta_objective_loss_warm_minus_vanilla": -0.006196528673171997,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:dense:20261101",
+      "delta_target_cosine_warm_minus_vanilla": -0.6109505546721616,
+      "delta_objective_loss_warm_minus_vanilla": 0.01905614137649536,
+      "vanilla_recovered": false,
+      "warm_recovered": false
+    },
+    {
+      "pair_id": "mse:d32-k4:dense:20261102",
+      "delta_target_cosine_warm_minus_vanilla": -0.018067289748695314,
+      "delta_objective_loss_warm_minus_vanilla": 0.003770589828491211,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:dense:20261103",
+      "delta_target_cosine_warm_minus_vanilla": 0.22594086072933195,
+      "delta_objective_loss_warm_minus_vanilla": -0.0017322450876235962,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:dense:20261104",
+      "delta_target_cosine_warm_minus_vanilla": 0.38287374664876406,
+      "delta_objective_loss_warm_minus_vanilla": 0.004994995892047882,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:axis:20261101",
+      "delta_target_cosine_warm_minus_vanilla": 0.11936688423156738,
+      "delta_objective_loss_warm_minus_vanilla": -0.005065977573394775,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:axis:20261102",
+      "delta_target_cosine_warm_minus_vanilla": 0.004066348075866699,
+      "delta_objective_loss_warm_minus_vanilla": -0.008609592914581299,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:axis:20261103",
+      "delta_target_cosine_warm_minus_vanilla": 0.030704379081726074,
+      "delta_objective_loss_warm_minus_vanilla": -0.009923815727233887,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:axis:20261104",
+      "delta_target_cosine_warm_minus_vanilla": 0.002961397171020508,
+      "delta_objective_loss_warm_minus_vanilla": -0.03764179348945618,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:dense:20261101",
+      "delta_target_cosine_warm_minus_vanilla": 0.022558916272993668,
+      "delta_objective_loss_warm_minus_vanilla": -0.025376886129379272,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:dense:20261102",
+      "delta_target_cosine_warm_minus_vanilla": 0.13880382041534867,
+      "delta_objective_loss_warm_minus_vanilla": -0.014668136835098267,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:dense:20261103",
+      "delta_target_cosine_warm_minus_vanilla": 0.026849439109622453,
+      "delta_objective_loss_warm_minus_vanilla": -0.002706676721572876,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:dense:20261104",
+      "delta_target_cosine_warm_minus_vanilla": 0.08977601683047143,
+      "delta_objective_loss_warm_minus_vanilla": 0.01275220513343811,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:axis:20261101",
+      "delta_target_cosine_warm_minus_vanilla": 0.5473058223724365,
+      "delta_objective_loss_warm_minus_vanilla": 0.0017485320568084717,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:axis:20261102",
+      "delta_target_cosine_warm_minus_vanilla": 0.3233773708343506,
+      "delta_objective_loss_warm_minus_vanilla": -0.004136167466640472,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:axis:20261103",
+      "delta_target_cosine_warm_minus_vanilla": 0.2877543568611145,
+      "delta_objective_loss_warm_minus_vanilla": -0.0012276172637939453,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:axis:20261104",
+      "delta_target_cosine_warm_minus_vanilla": 0.1729651689529419,
+      "delta_objective_loss_warm_minus_vanilla": -0.006025455892086029,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:dense:20261101",
+      "delta_target_cosine_warm_minus_vanilla": 0.23921185459328342,
+      "delta_objective_loss_warm_minus_vanilla": -0.0025322362780570984,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:dense:20261102",
+      "delta_target_cosine_warm_minus_vanilla": 0.14809334144118402,
+      "delta_objective_loss_warm_minus_vanilla": 0.006797768175601959,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:dense:20261103",
+      "delta_target_cosine_warm_minus_vanilla": 0.2720325851136721,
+      "delta_objective_loss_warm_minus_vanilla": -0.011027969419956207,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:dense:20261104",
+      "delta_target_cosine_warm_minus_vanilla": 0.39807397760044294,
+      "delta_objective_loss_warm_minus_vanilla": -0.00750335305929184,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:axis:20261101",
+      "delta_target_cosine_warm_minus_vanilla": 0.16746801137924194,
+      "delta_objective_loss_warm_minus_vanilla": -0.06772485375404358,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:axis:20261102",
+      "delta_target_cosine_warm_minus_vanilla": 0.1591402292251587,
+      "delta_objective_loss_warm_minus_vanilla": 0.01711893081665039,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:axis:20261103",
+      "delta_target_cosine_warm_minus_vanilla": 0.9323672242462635,
+      "delta_objective_loss_warm_minus_vanilla": -0.03753650188446045,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:axis:20261104",
+      "delta_target_cosine_warm_minus_vanilla": 0.9600011762231588,
+      "delta_objective_loss_warm_minus_vanilla": -0.0033919215202331543,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:dense:20261101",
+      "delta_target_cosine_warm_minus_vanilla": 0.01077506934893746,
+      "delta_objective_loss_warm_minus_vanilla": -0.00542721152305603,
+      "vanilla_recovered": false,
+      "warm_recovered": false
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:dense:20261102",
+      "delta_target_cosine_warm_minus_vanilla": 0.056080975950232204,
+      "delta_objective_loss_warm_minus_vanilla": 0.02947896718978882,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:dense:20261103",
+      "delta_target_cosine_warm_minus_vanilla": 0.06037971347105353,
+      "delta_objective_loss_warm_minus_vanilla": 0.0012215077877044678,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:dense:20261104",
+      "delta_target_cosine_warm_minus_vanilla": 0.06915636398533886,
+      "delta_objective_loss_warm_minus_vanilla": -0.012001276016235352,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:axis:20261101",
+      "delta_target_cosine_warm_minus_vanilla": 0.3904660940170288,
+      "delta_objective_loss_warm_minus_vanilla": 0.003022335469722748,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:axis:20261102",
+      "delta_target_cosine_warm_minus_vanilla": 0.2424144148826599,
+      "delta_objective_loss_warm_minus_vanilla": 0.010013416409492493,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:axis:20261103",
+      "delta_target_cosine_warm_minus_vanilla": 0.3317500352859497,
+      "delta_objective_loss_warm_minus_vanilla": 0.0017830133438110352,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:axis:20261104",
+      "delta_target_cosine_warm_minus_vanilla": 0.9231748133897781,
+      "delta_objective_loss_warm_minus_vanilla": -0.04566694796085358,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:dense:20261101",
+      "delta_target_cosine_warm_minus_vanilla": -0.1899967886092052,
+      "delta_objective_loss_warm_minus_vanilla": 0.0042512863874435425,
+      "vanilla_recovered": false,
+      "warm_recovered": false
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:dense:20261102",
+      "delta_target_cosine_warm_minus_vanilla": 0.1055776283219344,
+      "delta_objective_loss_warm_minus_vanilla": -0.0023858770728111267,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:dense:20261103",
+      "delta_target_cosine_warm_minus_vanilla": 0.26454006708472255,
+      "delta_objective_loss_warm_minus_vanilla": 0.003652244806289673,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:dense:20261104",
+      "delta_target_cosine_warm_minus_vanilla": 0.35020520806907596,
+      "delta_objective_loss_warm_minus_vanilla": 0.0068814754486083984,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    }
+  ],
+  "evidence_eligible": true,
+  "evidence_scope": "paired_initialization_ablation",
+  "completed_at_utc": "2026-09-04T03:48:21.023549+00:00",
+  "protocol_path": "EXTERNAL_RUN_PATH/spectral_anchor_v6_warm_start_matched/spectral_warm_start_matched_protocol.json"
+}

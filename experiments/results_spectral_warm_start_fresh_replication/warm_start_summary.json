@@ -1,0 +1,794 @@
+{
+  "experiment_id": "spectral-anchor-sae-v9-independent-fresh-seed-replication",
+  "status": "completed",
+  "rows": 192,
+  "expected_rows": 192,
+  "pairs": 96,
+  "expected_pairs": 96,
+  "complete": true,
+  "pair_integrity": true,
+  "variant_summary": {
+    "vanilla-random": {
+      "initialization": "random_decoder_encoder",
+      "rows": 96,
+      "pairs": 96,
+      "recovery_rate": 0.40625,
+      "certificate_pass_rate": 0.3645833333333333,
+      "mean_target_cosine": 0.6812340060199022,
+      "minimum_target_cosine": 0.0026171880308538675,
+      "mean_initial_anchor_cosine": 0.727720153828462,
+      "mean_final_candidate_cosine_to_training_spectral": 0.6825302117384671,
+      "mean_objective_loss": 0.2698006146432211,
+      "projection_hits": 0
+    },
+    "spectral-warm-start": {
+      "initialization": "training_spectral_signed_pair",
+      "rows": 96,
+      "pairs": 96,
+      "recovery_rate": 0.9270833333333334,
+      "certificate_pass_rate": 0.9166666666666666,
+      "mean_target_cosine": 0.9130809301121898,
+      "minimum_target_cosine": 0.007963051088154316,
+      "mean_initial_anchor_cosine": 0.9999999962747097,
+      "mean_final_candidate_cosine_to_training_spectral": 0.9139585569275376,
+      "mean_objective_loss": 0.2668422618880868,
+      "projection_hits": 0
+    }
+  },
+  "paired_deltas": [
+    {
+      "pair_id": "mse:d16-k2:axis:20270101",
+      "delta_target_cosine_warm_minus_vanilla": 0.6645803153514862,
+      "delta_objective_loss_warm_minus_vanilla": -0.015550404787063599,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:axis:20270102",
+      "delta_target_cosine_warm_minus_vanilla": 0.013597309589385986,
+      "delta_objective_loss_warm_minus_vanilla": 0.018162041902542114,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:axis:20270103",
+      "delta_target_cosine_warm_minus_vanilla": 0.9817707175388932,
+      "delta_objective_loss_warm_minus_vanilla": -0.016861766576766968,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:axis:20270104",
+      "delta_target_cosine_warm_minus_vanilla": 0.9046898037195206,
+      "delta_objective_loss_warm_minus_vanilla": -0.07044598460197449,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:axis:20270105",
+      "delta_target_cosine_warm_minus_vanilla": 0.16756105422973633,
+      "delta_objective_loss_warm_minus_vanilla": -0.01773279905319214,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:axis:20270106",
+      "delta_target_cosine_warm_minus_vanilla": 0.06405550241470337,
+      "delta_objective_loss_warm_minus_vanilla": 0.0009999871253967285,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:axis:20270107",
+      "delta_target_cosine_warm_minus_vanilla": 0.03990054130554199,
+      "delta_objective_loss_warm_minus_vanilla": -0.04070723056793213,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:axis:20270108",
+      "delta_target_cosine_warm_minus_vanilla": -0.98225689958781,
+      "delta_objective_loss_warm_minus_vanilla": -0.007308900356292725,
+      "vanilla_recovered": true,
+      "warm_recovered": false
+    },
+    {
+      "pair_id": "mse:d16-k2:dense:20270101",
+      "delta_target_cosine_warm_minus_vanilla": -0.9434313744836706,
+      "delta_objective_loss_warm_minus_vanilla": 0.02017185091972351,
+      "vanilla_recovered": true,
+      "warm_recovered": false
+    },
+    {
+      "pair_id": "mse:d16-k2:dense:20270102",
+      "delta_target_cosine_warm_minus_vanilla": 0.08602296509403284,
+      "delta_objective_loss_warm_minus_vanilla": -0.02833378314971924,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:dense:20270103",
+      "delta_target_cosine_warm_minus_vanilla": -0.0031419843362143762,
+      "delta_objective_loss_warm_minus_vanilla": -0.012578397989273071,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:dense:20270104",
+      "delta_target_cosine_warm_minus_vanilla": 0.0354740593558841,
+      "delta_objective_loss_warm_minus_vanilla": 0.014099806547164917,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:dense:20270105",
+      "delta_target_cosine_warm_minus_vanilla": 0.003242441349640135,
+      "delta_objective_loss_warm_minus_vanilla": 0.00764995813369751,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:dense:20270106",
+      "delta_target_cosine_warm_minus_vanilla": 0.8854434465918612,
+      "delta_objective_loss_warm_minus_vanilla": 0.010721087455749512,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:dense:20270107",
+      "delta_target_cosine_warm_minus_vanilla": 0.0488794335072289,
+      "delta_objective_loss_warm_minus_vanilla": 0.022744864225387573,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d16-k2:dense:20270108",
+      "delta_target_cosine_warm_minus_vanilla": 0.9378280392191114,
+      "delta_objective_loss_warm_minus_vanilla": -0.014622211456298828,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:axis:20270101",
+      "delta_target_cosine_warm_minus_vanilla": 0.2879886031150818,
+      "delta_objective_loss_warm_minus_vanilla": 0.008543848991394043,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:axis:20270102",
+      "delta_target_cosine_warm_minus_vanilla": 0.3202040195465088,
+      "delta_objective_loss_warm_minus_vanilla": -0.00043704360723495483,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:axis:20270103",
+      "delta_target_cosine_warm_minus_vanilla": 0.22898495197296143,
+      "delta_objective_loss_warm_minus_vanilla": -0.0051920413970947266,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:axis:20270104",
+      "delta_target_cosine_warm_minus_vanilla": -0.8409049063920975,
+      "delta_objective_loss_warm_minus_vanilla": 0.02306400239467621,
+      "vanilla_recovered": true,
+      "warm_recovered": false
+    },
+    {
+      "pair_id": "mse:d32-k4:axis:20270105",
+      "delta_target_cosine_warm_minus_vanilla": 0.05322819948196411,
+      "delta_objective_loss_warm_minus_vanilla": 0.005387105047702789,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:axis:20270106",
+      "delta_target_cosine_warm_minus_vanilla": 0.3519297242164612,
+      "delta_objective_loss_warm_minus_vanilla": 0.014429666101932526,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:axis:20270107",
+      "delta_target_cosine_warm_minus_vanilla": 0.3368198275566101,
+      "delta_objective_loss_warm_minus_vanilla": -0.012796424329280853,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:axis:20270108",
+      "delta_target_cosine_warm_minus_vanilla": 0.1968921422958374,
+      "delta_objective_loss_warm_minus_vanilla": -0.002485521137714386,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:dense:20270101",
+      "delta_target_cosine_warm_minus_vanilla": -0.8549327351182443,
+      "delta_objective_loss_warm_minus_vanilla": 0.019377954304218292,
+      "vanilla_recovered": true,
+      "warm_recovered": false
+    },
+    {
+      "pair_id": "mse:d32-k4:dense:20270102",
+      "delta_target_cosine_warm_minus_vanilla": 0.2395277248079929,
+      "delta_objective_loss_warm_minus_vanilla": -0.001583188772201538,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:dense:20270103",
+      "delta_target_cosine_warm_minus_vanilla": 0.1478716121395245,
+      "delta_objective_loss_warm_minus_vanilla": -0.00018696486949920654,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:dense:20270104",
+      "delta_target_cosine_warm_minus_vanilla": 0.17573886998181554,
+      "delta_objective_loss_warm_minus_vanilla": -0.004893317818641663,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:dense:20270105",
+      "delta_target_cosine_warm_minus_vanilla": 0.2014255934448559,
+      "delta_objective_loss_warm_minus_vanilla": 0.006335332989692688,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:dense:20270106",
+      "delta_target_cosine_warm_minus_vanilla": 0.3901246865153112,
+      "delta_objective_loss_warm_minus_vanilla": -0.008165940642356873,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:dense:20270107",
+      "delta_target_cosine_warm_minus_vanilla": 0.2390670676563027,
+      "delta_objective_loss_warm_minus_vanilla": 0.004887692630290985,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse:d32-k4:dense:20270108",
+      "delta_target_cosine_warm_minus_vanilla": 0.17816463777476066,
+      "delta_objective_loss_warm_minus_vanilla": 0.00181637704372406,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:axis:20270101",
+      "delta_target_cosine_warm_minus_vanilla": -0.0032302141189575195,
+      "delta_objective_loss_warm_minus_vanilla": 0.017813533544540405,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:axis:20270102",
+      "delta_target_cosine_warm_minus_vanilla": 0.9200404062867165,
+      "delta_objective_loss_warm_minus_vanilla": -0.03479298949241638,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:axis:20270103",
+      "delta_target_cosine_warm_minus_vanilla": 0.9608217366039753,
+      "delta_objective_loss_warm_minus_vanilla": 0.045996278524398804,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:axis:20270104",
+      "delta_target_cosine_warm_minus_vanilla": 0.11942547559738159,
+      "delta_objective_loss_warm_minus_vanilla": -0.01734977960586548,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:axis:20270105",
+      "delta_target_cosine_warm_minus_vanilla": 0.03869527578353882,
+      "delta_objective_loss_warm_minus_vanilla": -0.0018206238746643066,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:axis:20270106",
+      "delta_target_cosine_warm_minus_vanilla": 0.5489997565746307,
+      "delta_objective_loss_warm_minus_vanilla": 0.004672795534133911,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:axis:20270107",
+      "delta_target_cosine_warm_minus_vanilla": -0.8566650450229645,
+      "delta_objective_loss_warm_minus_vanilla": 0.00860646367073059,
+      "vanilla_recovered": true,
+      "warm_recovered": false
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:axis:20270108",
+      "delta_target_cosine_warm_minus_vanilla": 0.8509541749954224,
+      "delta_objective_loss_warm_minus_vanilla": -0.01091080904006958,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:dense:20270101",
+      "delta_target_cosine_warm_minus_vanilla": -0.006931154604737699,
+      "delta_objective_loss_warm_minus_vanilla": -0.020443379878997803,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:dense:20270102",
+      "delta_target_cosine_warm_minus_vanilla": -0.00550178638433918,
+      "delta_objective_loss_warm_minus_vanilla": -0.011331886053085327,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:dense:20270103",
+      "delta_target_cosine_warm_minus_vanilla": 0.6437284788117148,
+      "delta_objective_loss_warm_minus_vanilla": -0.002652883529663086,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:dense:20270104",
+      "delta_target_cosine_warm_minus_vanilla": 0.030853805918286348,
+      "delta_objective_loss_warm_minus_vanilla": -0.05529540777206421,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:dense:20270105",
+      "delta_target_cosine_warm_minus_vanilla": 0.9357943352404493,
+      "delta_objective_loss_warm_minus_vanilla": 0.0011149048805236816,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:dense:20270106",
+      "delta_target_cosine_warm_minus_vanilla": 0.6288777522476738,
+      "delta_objective_loss_warm_minus_vanilla": -0.010496944189071655,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:dense:20270107",
+      "delta_target_cosine_warm_minus_vanilla": 0.02014677310737434,
+      "delta_objective_loss_warm_minus_vanilla": 0.007748603820800781,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d16-k2:dense:20270108",
+      "delta_target_cosine_warm_minus_vanilla": 0.08552867739140912,
+      "delta_objective_loss_warm_minus_vanilla": 0.028247207403182983,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:axis:20270101",
+      "delta_target_cosine_warm_minus_vanilla": 0.2808610200881958,
+      "delta_objective_loss_warm_minus_vanilla": 0.0009232237935066223,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:axis:20270102",
+      "delta_target_cosine_warm_minus_vanilla": 0.12150788307189941,
+      "delta_objective_loss_warm_minus_vanilla": 0.002370081841945648,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:axis:20270103",
+      "delta_target_cosine_warm_minus_vanilla": 0.40389400720596313,
+      "delta_objective_loss_warm_minus_vanilla": -0.009709745645523071,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:axis:20270104",
+      "delta_target_cosine_warm_minus_vanilla": 0.3692379593849182,
+      "delta_objective_loss_warm_minus_vanilla": 0.004329286515712738,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:axis:20270105",
+      "delta_target_cosine_warm_minus_vanilla": 0.9527612251695246,
+      "delta_objective_loss_warm_minus_vanilla": -0.01507733017206192,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:axis:20270106",
+      "delta_target_cosine_warm_minus_vanilla": 0.3606538772583008,
+      "delta_objective_loss_warm_minus_vanilla": -0.002003714442253113,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:axis:20270107",
+      "delta_target_cosine_warm_minus_vanilla": 0.31501954793930054,
+      "delta_objective_loss_warm_minus_vanilla": 0.008014187216758728,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:axis:20270108",
+      "delta_target_cosine_warm_minus_vanilla": 0.34249603748321533,
+      "delta_objective_loss_warm_minus_vanilla": 0.007119849324226379,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:dense:20270101",
+      "delta_target_cosine_warm_minus_vanilla": 0.21113667399957858,
+      "delta_objective_loss_warm_minus_vanilla": -0.004374906420707703,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:dense:20270102",
+      "delta_target_cosine_warm_minus_vanilla": 0.3255078502646924,
+      "delta_objective_loss_warm_minus_vanilla": -0.002187199890613556,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:dense:20270103",
+      "delta_target_cosine_warm_minus_vanilla": -0.0034568265629466577,
+      "delta_objective_loss_warm_minus_vanilla": -0.0023828521370887756,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:dense:20270104",
+      "delta_target_cosine_warm_minus_vanilla": 0.2927120637639047,
+      "delta_objective_loss_warm_minus_vanilla": 0.008317671716213226,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:dense:20270105",
+      "delta_target_cosine_warm_minus_vanilla": 0.26154241331414474,
+      "delta_objective_loss_warm_minus_vanilla": 0.001233614981174469,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:dense:20270106",
+      "delta_target_cosine_warm_minus_vanilla": 0.10056680333190882,
+      "delta_objective_loss_warm_minus_vanilla": -0.004644908010959625,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:dense:20270107",
+      "delta_target_cosine_warm_minus_vanilla": 0.29738206958053603,
+      "delta_objective_loss_warm_minus_vanilla": 0.0022093206644058228,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l1:d32-k4:dense:20270108",
+      "delta_target_cosine_warm_minus_vanilla": 0.163630682314316,
+      "delta_objective_loss_warm_minus_vanilla": 0.012977711856365204,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:axis:20270101",
+      "delta_target_cosine_warm_minus_vanilla": 0.07113045454025269,
+      "delta_objective_loss_warm_minus_vanilla": 0.0035766661167144775,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:axis:20270102",
+      "delta_target_cosine_warm_minus_vanilla": 0.12670022249221802,
+      "delta_objective_loss_warm_minus_vanilla": 0.01899692416191101,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:axis:20270103",
+      "delta_target_cosine_warm_minus_vanilla": 0.0009787678718566895,
+      "delta_objective_loss_warm_minus_vanilla": -0.019213169813156128,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:axis:20270104",
+      "delta_target_cosine_warm_minus_vanilla": 0.08307468891143799,
+      "delta_objective_loss_warm_minus_vanilla": -0.02769613265991211,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:axis:20270105",
+      "delta_target_cosine_warm_minus_vanilla": 0.02884429693222046,
+      "delta_objective_loss_warm_minus_vanilla": -0.011683672666549683,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:axis:20270106",
+      "delta_target_cosine_warm_minus_vanilla": 0.28864604234695435,
+      "delta_objective_loss_warm_minus_vanilla": -0.018267333507537842,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:axis:20270107",
+      "delta_target_cosine_warm_minus_vanilla": 0.1925668716430664,
+      "delta_objective_loss_warm_minus_vanilla": -0.0031571686267852783,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:axis:20270108",
+      "delta_target_cosine_warm_minus_vanilla": 0.09312230348587036,
+      "delta_objective_loss_warm_minus_vanilla": 0.00309106707572937,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:dense:20270101",
+      "delta_target_cosine_warm_minus_vanilla": 0.13503004164906585,
+      "delta_objective_loss_warm_minus_vanilla": 0.008156388998031616,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:dense:20270102",
+      "delta_target_cosine_warm_minus_vanilla": 0.44109615655663026,
+      "delta_objective_loss_warm_minus_vanilla": -0.007594168186187744,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:dense:20270103",
+      "delta_target_cosine_warm_minus_vanilla": 0.0392473323599849,
+      "delta_objective_loss_warm_minus_vanilla": -0.02638956904411316,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:dense:20270104",
+      "delta_target_cosine_warm_minus_vanilla": 0.016725955758123967,
+      "delta_objective_loss_warm_minus_vanilla": 0.004918336868286133,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:dense:20270105",
+      "delta_target_cosine_warm_minus_vanilla": -0.010408870199477671,
+      "delta_objective_loss_warm_minus_vanilla": -0.00592687726020813,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:dense:20270106",
+      "delta_target_cosine_warm_minus_vanilla": -0.355924288787086,
+      "delta_objective_loss_warm_minus_vanilla": 0.009163320064544678,
+      "vanilla_recovered": false,
+      "warm_recovered": false
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:dense:20270107",
+      "delta_target_cosine_warm_minus_vanilla": 0.006331784272064378,
+      "delta_objective_loss_warm_minus_vanilla": -0.0020530223846435547,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d16-k2:dense:20270108",
+      "delta_target_cosine_warm_minus_vanilla": 0.2771313129538956,
+      "delta_objective_loss_warm_minus_vanilla": -0.03349083662033081,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:axis:20270101",
+      "delta_target_cosine_warm_minus_vanilla": 0.0970718264579773,
+      "delta_objective_loss_warm_minus_vanilla": 0.003976032137870789,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:axis:20270102",
+      "delta_target_cosine_warm_minus_vanilla": 0.4330195188522339,
+      "delta_objective_loss_warm_minus_vanilla": 0.01017637550830841,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:axis:20270103",
+      "delta_target_cosine_warm_minus_vanilla": 0.45868945121765137,
+      "delta_objective_loss_warm_minus_vanilla": -0.003649868071079254,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:axis:20270104",
+      "delta_target_cosine_warm_minus_vanilla": 0.3619776964187622,
+      "delta_objective_loss_warm_minus_vanilla": 0.005715504288673401,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:axis:20270105",
+      "delta_target_cosine_warm_minus_vanilla": 0.9534667432308197,
+      "delta_objective_loss_warm_minus_vanilla": -0.014590099453926086,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:axis:20270106",
+      "delta_target_cosine_warm_minus_vanilla": 0.7155212759971619,
+      "delta_objective_loss_warm_minus_vanilla": -0.019492410123348236,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:axis:20270107",
+      "delta_target_cosine_warm_minus_vanilla": 0.48601749539375305,
+      "delta_objective_loss_warm_minus_vanilla": -0.006463289260864258,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:axis:20270108",
+      "delta_target_cosine_warm_minus_vanilla": 0.32844436168670654,
+      "delta_objective_loss_warm_minus_vanilla": 0.0014541000127792358,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:dense:20270101",
+      "delta_target_cosine_warm_minus_vanilla": 0.4135927537746227,
+      "delta_objective_loss_warm_minus_vanilla": 0.010675333440303802,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:dense:20270102",
+      "delta_target_cosine_warm_minus_vanilla": -0.019828549398650086,
+      "delta_objective_loss_warm_minus_vanilla": 0.00026669353246688843,
+      "vanilla_recovered": false,
+      "warm_recovered": false
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:dense:20270103",
+      "delta_target_cosine_warm_minus_vanilla": 0.43667009604063567,
+      "delta_objective_loss_warm_minus_vanilla": -0.01770821213722229,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:dense:20270104",
+      "delta_target_cosine_warm_minus_vanilla": 0.41245096272123705,
+      "delta_objective_loss_warm_minus_vanilla": -0.005026325583457947,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:dense:20270105",
+      "delta_target_cosine_warm_minus_vanilla": 0.47474848193517594,
+      "delta_objective_loss_warm_minus_vanilla": -0.00781027227640152,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:dense:20270106",
+      "delta_target_cosine_warm_minus_vanilla": 0.4708565824277201,
+      "delta_objective_loss_warm_minus_vanilla": -0.0010771974921226501,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:dense:20270107",
+      "delta_target_cosine_warm_minus_vanilla": 0.14880337951987954,
+      "delta_objective_loss_warm_minus_vanilla": -0.007947325706481934,
+      "vanilla_recovered": true,
+      "warm_recovered": true
+    },
+    {
+      "pair_id": "mse_l2:d32-k4:dense:20270108",
+      "delta_target_cosine_warm_minus_vanilla": 0.38817243790684164,
+      "delta_objective_loss_warm_minus_vanilla": 0.000339314341545105,
+      "vanilla_recovered": false,
+      "warm_recovered": true
+    }
+  ],
+  "clustered_paired_analysis": {
+    "primary_unit": "base_seed_cluster",
+    "clusters": 8,
+    "conditions_per_cluster": 12,
+    "cluster_rows": [
+      {
+        "seed": 20270101,
+        "conditions": 12,
+        "mean_delta_recovery_warm_minus_vanilla": 0.25,
+        "mean_delta_target_cosine_warm_minus_vanilla": 0.029405517554220894,
+        "mean_delta_objective_loss_warm_minus_vanilla": 0.0044038450966278715
+      },
+      {
+        "seed": 20270102,
+        "conditions": 12,
+        "mean_delta_recovery_warm_minus_vanilla": 0.5,
+        "mean_delta_target_cosine_warm_minus_vanilla": 0.2501578100649435,
+        "mean_delta_objective_loss_warm_minus_vanilla": -0.0030240118503570557
+      },
+      {
+        "seed": 20270103,
+        "conditions": 12,
+        "mean_delta_recovery_warm_minus_vanilla": 0.6666666666666666,
+        "mean_delta_target_cosine_warm_minus_vanilla": 0.35800486173866664,
+        "mean_delta_objective_loss_warm_minus_vanilla": -0.005877432723840077
+      },
+      {
+        "seed": 20270104,
+        "conditions": 12,
+        "mean_delta_recovery_warm_minus_vanilla": 0.4166666666666667,
+        "mean_delta_target_cosine_warm_minus_vanilla": 0.16345470292826458,
+        "mean_delta_objective_loss_warm_minus_vanilla": -0.010021861642599106
+      },
+      {
+        "seed": 20270105,
+        "conditions": 12,
+        "mean_delta_recovery_warm_minus_vanilla": 0.5833333333333334,
+        "mean_delta_target_cosine_warm_minus_vanilla": 0.33840843249271596,
+        "mean_delta_objective_loss_warm_minus_vanilla": -0.00441006322701772
+      },
+      {
+        "seed": 20270106,
+        "conditions": 12,
+        "mean_delta_recovery_warm_minus_vanilla": 0.75,
+        "mean_delta_target_cosine_warm_minus_vanilla": 0.37081259676130013,
+        "mean_delta_objective_loss_warm_minus_vanilla": -0.002013466010491053
+      },
+      {
+        "seed": 20270107,
+        "conditions": 12,
+        "mean_delta_recovery_warm_minus_vanilla": 0.4166666666666667,
+        "mean_delta_target_cosine_warm_minus_vanilla": 0.10618914553822445,
+        "mean_delta_objective_loss_warm_minus_vanilla": -0.0015761107206344604
+      },
+      {
+        "seed": 20270108,
+        "conditions": 12,
+        "mean_delta_recovery_warm_minus_vanilla": 0.5833333333333334,
+        "mean_delta_target_cosine_warm_minus_vanilla": 0.2383423256599647,
+        "mean_delta_objective_loss_warm_minus_vanilla": -0.0011477209627628326
+      }
+    ],
+    "mean_delta_recovery_warm_minus_vanilla": 0.5208333333333334,
+    "mean_delta_recovery_warm_minus_vanilla_bootstrap_ci95": [
+      0.4166666666666667,
+      0.625
+    ],
+    "mean_delta_target_cosine_warm_minus_vanilla": 0.2318469240922876,
+    "mean_delta_target_cosine_warm_minus_vanilla_bootstrap_ci95": [
+      0.15077288064913036,
+      0.3084493271739716
+    ],
+    "mean_delta_objective_loss_warm_minus_vanilla": -0.002958352755134304,
+    "mean_delta_objective_loss_warm_minus_vanilla_bootstrap_ci95": [
+      -0.005636297321567932,
+      -0.0002774369262624579
+    ]
+  },
+  "evidence_eligible": true,
+  "evidence_scope": "paired_initialization_ablation",
+  "completed_at_utc": "2026-09-10T13:23:15.170795+00:00",
+  "protocol_path": "experiments/spectral_warm_start_fresh_replication_protocol.json"
+}

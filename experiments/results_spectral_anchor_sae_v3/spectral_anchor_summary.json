@@ -1,0 +1,12 @@
+{
+  "experiment_id": "spectral-anchor-sae-v3",
+  "status": "completed",
+  "rows": 48,
+  "expected_rows": 48,
+  "anchor_recovery_rate": 1.0,
+  "anchor_cosine_lower_bound": 0.940537900268641,
+  "covariance_error_bound": 0.13945688453191013,
+  "evidence_eligible": true,
+  "completed_at_utc": "2026-09-01T15:16:37.725148+00:00",
+  "protocol_path": "spectral_anchor_sae_protocol.json"
+}

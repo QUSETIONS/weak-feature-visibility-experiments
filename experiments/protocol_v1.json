@@ -1,0 +1,33 @@
+{
+  "name": "iclr_detector_class_visibility_e1_e2_synthetic",
+  "frozen_at": "2026-08-24",
+  "faithful_to": "ICLR_experiment_design.md v1",
+  "do_not_tune_after_seeing_results": true,
+  "shared": {
+    "m": 8,
+    "alpha": 0.05,
+    "n_trials": 700,
+    "n_null": 2000,
+    "n_seeds": 8,
+    "base_seed": 20260824,
+    "lambdas": [0.40, 0.55, 0.70],
+    "lock_lambda": 0.55,
+    "n_grid": [512, 1024, 2048, 4096, 8192, 16384],
+    "lock_dense_power": [0.6, 0.9],
+    "lock_axis_power_max": 0.1,
+    "thetas_deg": [0, 15, 30, 45, 90],
+    "n_haar_bases": 12,
+    "cov_statistic": "frobenius_full_minus_I",
+    "ind_statistic": "frobenius_offdiag",
+    "label_statistic": "squared_sample_mean_norm",
+    "label_model": "mean_shift_N(lambda w, I)",
+    "unlabeled_model": "h = eps + lambda * z * w, z~N(0,1), eps~N(0,I)",
+    "background_covariance": "identity_not_refit_on_H1"
+  },
+  "preregistered_gates": {
+    "E1-syn-ind": "at locked N and lambda=0.55: axis ind power <= 0.10, dense >= 0.80",
+    "E1-rot": "ind power vs 1-||B^T w||_4^4 monotone, pearson r >= 0.9; label power flat in theta",
+    "E2-align": "B_align ind power near 0; same w on Haar bases high",
+    "E2-coef": "1-||u||_4^4 has largest |r| with ind power, at least 0.10 above next competitor"
+  }
+}

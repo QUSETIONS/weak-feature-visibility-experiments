@@ -1,0 +1,30 @@
+{
+  "source_sha256": "4d85601a3e0195e2d1dc98510f22849105aadb716ace5bb385df2674e943204a",
+  "raw_rows": 48,
+  "paired_rows": 24,
+  "seeds": [
+    20260824,
+    20260825,
+    20260826,
+    20260827,
+    20260828,
+    20260829,
+    20260830,
+    20260831
+  ],
+  "strengths": [
+    0.35,
+    0.55,
+    0.8
+  ],
+  "primary_strength": 0.55,
+  "primary_mean_delta_ind_dense_minus_axis": 0.91875,
+  "primary_mean_delta_decoder_cosine_dense_minus_axis": 0.008123746880640825,
+  "detector_class_flips": 24,
+  "detector_class_pairs": 24,
+  "recovery_agreements": 22,
+  "recovery_pairs": 24,
+  "missing_pairs": 0,
+  "excluded_rows": 0,
+  "bootstrap_reproduces_frozen_summary": true
+}

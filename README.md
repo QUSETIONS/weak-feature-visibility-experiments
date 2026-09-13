@@ -1,7 +1,7 @@
-﻿# Weak-Feature Visibility Experiments
+# Weak-Feature Visibility Experiments
 
 This anonymous repository contains the experiment code and lightweight result artifacts for the paper
-`Why Weak Features Hide: A Local Detector-Class Visibility Calculus for Superposition`.
+`Why Weak Features Hide: The Detector Axis Hole Is Not a Free-Decoder Constraint`.
 
 The repository is intentionally lightweight. It includes scripts, CSV/JSON summaries, and paper figures,
 but excludes large model weights, GPT-2 activation caches, SAE weights, Python caches, and local logs.
@@ -10,8 +10,11 @@ Public artifacts used by the experiments are documented in `REPRODUCIBILITY_ASSE
 ## Repository Layout
 
 - `experiments/`: scripts for synthetic validation, GPT-2 bridge experiments, natural-event probes, and SAE-facing audits.
-- `results/`: selected result summaries and figures used by the paper.
+- `results/`: earlier lightweight anonymous result summaries retained for provenance.
+- `experiments/results_*/`: current complete JSON/CSV summaries and matched raw artifacts used by the latest manuscript.
 - `assets_metadata/`: license/config metadata for public pretrained SAE artifacts; weights are not included.
+- `paper/`: anonymous manuscript source, editable figure source/data, rendered figures, and the latest anonymous PDF.
+- `ICLR_experiment_design*.md`: experiment design and claim-boundary notes.
 - `EXPERIMENTS_OVERVIEW.md`: claim-to-experiment index.
 - `REPRODUCIBILITY_ASSETS_COMPUTE.md`: data, asset, and compute notes.
 
@@ -23,6 +26,22 @@ The experiments are organized as a staged validation:
 2. Controlled GPT-2 injections test whether the evidence coordinate transfers to real activation backgrounds.
 3. Externally defined natural events test whether the same ordering appears without injected labels.
 4. SAE-facing audits test whether recovery by controlled or pretrained sparse decoders becomes more favorable as detector-law evidence increases.
+5. Spectral-anchor and warm-start follow-ups separate structured guarantees from optimization- and budget-sensitive empirical effects.
+
+## Current paper build
+
+The anonymous manuscript is in `paper/main.tex`; the rendered version is
+`paper/ICLR2027_latest_anonymous.pdf`. From a LaTeX/Tectonic environment:
+
+```bash
+make -C paper TECTONIC=tectonic
+```
+
+The public source is intentionally anonymous. The author-version source and PDF are kept outside this repository.
+
+The latest real-residual follow-up is recorded in
+`experiments/results_lm_spectral_warm_start_scale_extension_budget/`. It contains 48 paired conditions at 6k steps,
+with the pre-specified boundary that the intervention is budget-sensitive rather than a universal improvement.
 
 ## Reproducing Key Results
 
@@ -80,4 +99,3 @@ the result summaries, but should be pinned in a final archival release if full r
 
 This repository is prepared for anonymous review. It should not contain author names, institution names,
 local machine paths, private server addresses, model weights, activation caches, or funding statements.
-

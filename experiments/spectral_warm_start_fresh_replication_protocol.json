@@ -1,0 +1,76 @@
+{
+  "experiment_id": "spectral-anchor-sae-v9-independent-fresh-seed-replication",
+  "status": "frozen-before-execution",
+  "frozen_at": "2026-09-10",
+  "purpose": "Independent fresh-seed replication of the full v6 matched warm-start matrix without selecting objectives, capacities, or geometries from the observed v6 effects.",
+  "parent_protocol": "spectral_warm_start_matched_protocol.json",
+  "feature": {
+    "m": 8,
+    "signal_strength": 0.55,
+    "distribution": "rank-one Gaussian signal plus isotropic Gaussian noise"
+  },
+  "geometry": ["axis", "dense"],
+  "objectives": [
+    {"id": "mse", "code_penalty": 0.0, "code_penalty_type": "none"},
+    {"id": "mse_l1", "code_penalty": 0.001, "code_penalty_type": "l1"},
+    {"id": "mse_l2", "code_penalty": 0.001, "code_penalty_type": "l2"}
+  ],
+  "capacities": [
+    {"id": "d16-k2", "dict_size": 16, "k": 2},
+    {"id": "d32-k4", "dict_size": 32, "k": 4}
+  ],
+  "variants": [
+    {"id": "vanilla-random", "initialization": "random_decoder_encoder"},
+    {"id": "spectral-warm-start", "initialization": "training_spectral_signed_pair", "anchor_pair_slots": [0, 1]}
+  ],
+  "seeds": {
+    "base": 20270101,
+    "count": 8,
+    "training_rng_offset": 2710000,
+    "torch_seed_offset": 2810000,
+    "validation_rng_offset": 2910000
+  },
+  "training": {
+    "N_train": 20000,
+    "N_validation": 100000,
+    "steps": 4000,
+    "batch": 512,
+    "lr": 0.001,
+    "decoder_columns_unit_norm": true,
+    "candidate_selection": "training_split_activation_usage_only",
+    "candidate_selection_tie_break": "lowest_atom_index",
+    "validation_is_never_used_for_selection": true,
+    "warm_start_uses_training_split_only": true,
+    "post_initialization_constraints": "none"
+  },
+  "comparison": {
+    "paired_conditions": "same data_seed, train_seed, validation_seed per row key",
+    "only_variant_difference": "initialization",
+    "expected_pairs": 96,
+    "random_variant_is_vanilla_baseline": true,
+    "warm_start_target_oracle_forbidden": true
+  },
+  "evaluation": {
+    "cosine_threshold": 0.80,
+    "target_cosine_is_validation_only": false,
+    "target_is_never_passed_to_training": true
+  },
+  "certificate": {
+    "delta": 0.05,
+    "rank": 1,
+    "cosine_threshold": 0.80,
+    "noise_variance": 1.0,
+    "independent_validation": true
+  },
+  "analysis": {
+    "primary_unit": "base_seed_cluster",
+    "rows_within_seed_are_not_independent_replicates": true,
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260910,
+    "primary_estimand": "mean within-seed recovery-rate difference across all objective-capacity-geometry conditions",
+    "secondary_estimands": ["mean within-seed target-cosine difference", "mean within-seed objective-loss difference"]
+  },
+  "expected_rows": 192,
+  "evidence_status": "eligible_as_independent_full-matrix_replication_only_if_complete_and_pair_integrity_passes",
+  "reporting_boundary": "This is an independent-seed replication of the same one-strength rank-one Gaussian matrix. The inferential unit is the base seed, not any of the 96 condition rows, and the result does not establish language-model or unknown-direction transfer."
+}
