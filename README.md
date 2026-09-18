@@ -14,6 +14,8 @@ Public artifacts used by the experiments are documented in `REPRODUCIBILITY_ASSE
 - `experiments/results_*/`: current complete JSON/CSV summaries and matched raw artifacts used by the latest manuscript.
 - `assets_metadata/`: license/config metadata for public pretrained SAE artifacts; weights are not included.
 - `paper/`: anonymous manuscript source, editable figure source/data, rendered figures, and the latest anonymous PDF.
+- `audit_bundle/`: claim-boundary, provenance, and red-team audit notes for the reported artifacts.
+- `pic/`: supplementary visual references and figure drafts; canonical paper figures remain under `paper/figures/`.
 - `ICLR_experiment_design*.md`: experiment design and claim-boundary notes.
 - `EXPERIMENTS_OVERVIEW.md`: claim-to-experiment index.
 - `REPRODUCIBILITY_ASSETS_COMPUTE.md`: data, asset, and compute notes.
@@ -42,6 +44,10 @@ The public source is intentionally anonymous. The author-version source and PDF 
 The latest real-residual follow-up is recorded in
 `experiments/results_lm_spectral_warm_start_scale_extension_budget/`. It contains 48 paired conditions at 6k steps,
 with the pre-specified boundary that the intervention is budget-sensitive rather than a universal improvement.
+
+The latest appendix follow-ups are also retained: a bounded-drift spectral-anchor audit and a 72-row dose-response
+artifact. Both are reported as structured-family or scale-limited evidence, not as universal recovery claims for
+unconstrained SAEs.
 
 ## Reproducing Key Results
 
